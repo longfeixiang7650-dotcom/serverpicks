@@ -104,7 +104,10 @@ def audit_site(domain, positioning):
 
 if __name__ == "__main__":
     targets = [("devex-tools.net", "开发者工具目录站，AI辅助整理，作者龙飞翔真实署名")]
-    if len(sys.argv) > 1 and sys.argv[1] == "both":
-        targets.append(("serverpicks.net", "云主机/VPS对比目录站，AI辅助整理，作者龙飞翔真实署名"))
+    if len(sys.argv) > 1:
+        if sys.argv[1] == "both":
+            targets.append(("serverpicks.net", "云主机/VPS对比目录站，AI辅助整理，作者龙飞翔真实署名"))
+        elif sys.argv[1] == "serverpicks":
+            targets = [("serverpicks.net", "云主机/VPS对比目录站，AI辅助整理，作者龙飞翔真实署名")]
     for domain, pos in targets:
         audit_site(domain, pos)

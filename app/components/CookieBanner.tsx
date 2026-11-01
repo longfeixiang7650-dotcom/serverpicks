@@ -28,7 +28,7 @@ export default function CookieBanner() {
     <div className="fixed bottom-0 left-0 right-0 z-50 p-4">
       <div className="max-w-[1200px] mx-auto bg-[#0F1F2D] border border-[#1E3A5F] rounded-xl p-4 md:p-5 shadow-2xl flex flex-col sm:flex-row items-start sm:items-center gap-4">
         <p className="text-sm text-[#839BBE] flex-1 leading-relaxed">
-          We use cookies to improve your experience and show relevant ads.{" "}
+          We use cookies for site functionality and security.{" "}
           <a
             href="/privacy"
             className="text-[#2563EB] hover:underline font-medium"

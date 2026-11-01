@@ -135,7 +135,7 @@ export default function ContactPage() {
               </h3>
               <div className="space-y-2">
                 <p className="text-sm text-ever-400">
-                  <strong className="text-white">Team:</strong>
+                  <strong className="text-white">General inquiries:</strong>
                   <br />
                   <a href="mailto:info@serverpicks.net" className="text-geospatial-light hover:underline">
                     info@serverpicks.net
@@ -161,7 +161,7 @@ export default function ContactPage() {
             <div className="bg-ever-800 border border-ever-700 rounded-xl p-6">
               <h3 className="text-sm font-semibold text-white mb-4 flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-geospatial" />
-                Studio
+                Location
               </h3>
               <p className="text-sm text-ever-400 leading-relaxed">
                 ServerPicks
@@ -177,7 +177,7 @@ export default function ContactPage() {
               </h3>
               <p className="text-sm text-ever-400">
                 We typically respond within <strong className="text-white">24 hours</strong> during
-                business days (EST).
+                business days (CST, UTC+8).
               </p>
             </div>
           </div>
