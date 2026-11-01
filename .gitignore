@@ -47,3 +47,9 @@ components.json
 tsconfig.tsbuildinfo
 .next_old
 tmp
+
+# rewrite/audit temp files
+rewrite_*.txt
+rewrite_checkpoint.json
+kimi_audit_*.log
+*.bak_pre_rewrite
