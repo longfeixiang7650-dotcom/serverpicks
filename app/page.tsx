@@ -4,7 +4,7 @@ import { useState, useMemo } from "react";
 import { ALL_TOOLS } from "@/data/tools";
 import { BLOG_POSTS } from "@/data/blog-posts";
 import Link from "next/link";
-import { BarChart3, Globe, Server, MapPin, TrendingUp, Layers, Shield, Cloud, Cpu } from "lucide-react";
+import { Globe, Server, TrendingUp, Layers, Shield, Cloud } from "lucide-react";
 
 export default function HomePage() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -40,41 +40,37 @@ export default function HomePage() {
     []
   );
 
-  // Slightly irregular stats (fixes "too clean" problem)
   const statsData = {
-    providersReviewed: ALL_TOOLS.length,
+    providers: ALL_TOOLS.length,
     categories: categories.length,
     articles: BLOG_POSTS.length,
-    totalBenchmarks: ALL_TOOLS.length * 4 + 17,
-    avgRating: (ALL_TOOLS.reduce((sum, t) => sum + t.rating, 0) / ALL_TOOLS.length).toFixed(1),
-    geospatialWorkloads: Math.floor(ALL_TOOLS.length * 0.38),
   };
 
-  // Top 6 providers for comparison table
-  const topProviders = useMemo(
-    () => [...ALL_TOOLS].sort((a, b) => b.rating - a.rating).slice(0, 6),
+  // Featured providers, ordered by feature count (objective, non-fabricated signal)
+  const featuredProviders = useMemo(
+    () => [...ALL_TOOLS].sort((a, b) => b.features.length - a.features.length).slice(0, 6),
     []
   );
 
   return (
     <div>
-      {/* HERO — Deep gray (#334155) with geospatial accent */}
+      {/* HERO */}
       <section className="relative bg-ever-800 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-ever-900 via-ever-800 to-ever-700 opacity-90" />
         <div className="relative max-w-6xl mx-auto px-6 pt-24 pb-16 md:pt-32 md:pb-24">
           <div className="max-w-3xl">
             <span className="inline-flex items-center gap-2 text-sm font-semibold text-geospatial-light bg-ever-700/60 px-4 py-1.5 rounded-full mb-6">
-              <MapPin className="w-3.5 h-3.5" />
-              Boston, MA · Cloud Infrastructure
+              <Cloud className="w-3.5 h-3.5" />
+              Cloud Hosting &amp; VPS Directory
             </span>
             <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-[1.05] mb-6 text-white">
               Cloud Hosting{" "}
-              <span className="text-geospatial-light">Benchmarked</span>
+              <span className="text-geospatial-light">Compared</span>
             </h1>
             <p className="text-xl text-ever-300 max-w-2xl mb-10 leading-relaxed">
               Side-by-side comparisons of cloud providers, VPS hosts, and
-              dedicated servers — engineered for geospatial and data-intensive
-              workloads. Real benchmarks, no sponsored rankings.
+              dedicated servers. Pricing, features, and use cases gathered from
+              public sources and organized for easy decision-making.
             </p>
             <div className="w-full max-w-lg">
               <div className="flex items-center bg-ever-700 rounded-xl shadow-sm overflow-hidden border border-ever-600">
@@ -100,12 +96,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Stats bar — irregular counts to look natural */}
+      {/* Stats bar */}
       <section className="bg-ever-700 border-b border-ever-600">
-        <div className="max-w-6xl mx-auto px-6 py-8 grid grid-cols-3 md:grid-cols-6 gap-6">
+        <div className="max-w-6xl mx-auto px-6 py-8 grid grid-cols-3 gap-6">
           <div className="text-center">
-            <p className="text-2xl font-black text-geospatial-light">{statsData.providersReviewed}</p>
-            <p className="text-xs text-ever-400 mt-1">Providers Reviewed</p>
+            <p className="text-2xl font-black text-geospatial-light">{statsData.providers}</p>
+            <p className="text-xs text-ever-400 mt-1">Providers Listed</p>
           </div>
           <div className="text-center">
             <p className="text-2xl font-black text-geospatial-light">{statsData.categories}</p>
@@ -115,41 +111,27 @@ export default function HomePage() {
             <p className="text-2xl font-black text-geospatial-light">{statsData.articles}</p>
             <p className="text-xs text-ever-400 mt-1">Articles</p>
           </div>
-          <div className="text-center">
-            <p className="text-2xl font-black text-geospatial-light">{statsData.totalBenchmarks}</p>
-            <p className="text-xs text-ever-400 mt-1">Benchmarks Run</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl font-black text-geospatial-light">{statsData.avgRating}</p>
-            <p className="text-xs text-ever-400 mt-1">Avg Rating</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl font-black text-geospatial-light">{statsData.geospatialWorkloads}</p>
-            <p className="text-xs text-ever-400 mt-1">Geo Workloads</p>
-          </div>
         </div>
       </section>
 
-      {/* Comparison Table — Top Providers */}
+      {/* Featured Providers */}
       <section className="py-16 bg-ever-800">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-2xl font-bold text-white mb-2">Top Providers Comparison</h2>
-          <p className="text-ever-400 mb-8">Highest-rated cloud hosts compared side by side</p>
+          <h2 className="text-2xl font-bold text-white mb-2">Featured Providers</h2>
+          <p className="text-ever-400 mb-8">A cross-section of popular cloud hosting platforms</p>
           <div className="overflow-x-auto rounded-xl border border-ever-600">
             <table className="w-full text-left">
               <thead>
                 <tr className="bg-ever-700 border-b border-ever-600">
                   <th className="px-5 py-4 text-sm font-semibold text-ever-300">Provider</th>
                   <th className="px-5 py-4 text-sm font-semibold text-ever-300">Category</th>
-                  <th className="px-5 py-4 text-sm font-semibold text-ever-300 text-center">Rating</th>
-                  <th className="px-5 py-4 text-sm font-semibold text-ever-300 text-center">Score</th>
-                  <th className="px-5 py-4 text-sm font-semibold text-ever-300 text-center">Features</th>
-                  <th className="px-5 py-4 text-sm font-semibold text-ever-300 text-center">Popularity</th>
+                  <th className="px-5 py-4 text-sm font-semibold text-ever-300">Starting Price</th>
+                  <th className="px-5 py-4 text-sm font-semibold text-ever-300 text-center">Key Features</th>
                   <th className="px-5 py-4 text-sm font-semibold text-ever-300"></th>
                 </tr>
               </thead>
               <tbody>
-                {topProviders.map((tool, idx) => (
+                {featuredProviders.map((tool, idx) => (
                   <tr key={tool.id} className={`border-b border-ever-700 ${idx % 2 === 0 ? 'bg-ever-800' : 'bg-ever-750'} hover:bg-ever-700 transition-colors`}>
                     <td className="px-5 py-4">
                       <div className="flex items-center gap-3">
@@ -160,28 +142,8 @@ export default function HomePage() {
                       </div>
                     </td>
                     <td className="px-5 py-4 text-sm text-ever-400">{tool.category}</td>
-                    <td className="px-5 py-4 text-center">
-                      <span className="inline-flex items-center gap-1 text-sm font-bold text-amber-400">
-                        ★ {tool.rating}
-                      </span>
-                    </td>
-                    <td className="px-5 py-4 text-center text-sm text-ever-400">{(tool.scoreBreakdown ? ((tool.scoreBreakdown.features + tool.scoreBreakdown.reviews + tool.scoreBreakdown.momentum + tool.scoreBreakdown.popularity) / 4).toFixed(1) : tool.rating.toFixed(1))}</td>
-                    <td className="px-5 py-4 text-center text-sm text-ever-400">
-                      <div className="inline-block w-16 bg-ever-700 rounded-full h-2">
-                        <div
-                          className="bg-geospatial rounded-full h-2"
-                          style={{ width: `${((tool.scoreBreakdown?.features || 5) / 10) * 100}%` }}
-                        />
-                      </div>
-                    </td>
-                    <td className="px-5 py-4 text-center text-sm text-ever-400">
-                      <div className="inline-block w-16 bg-ever-700 rounded-full h-2">
-                        <div
-                          className="bg-blue-500 rounded-full h-2"
-                          style={{ width: `${((tool.scoreBreakdown?.popularity || 5) / 10) * 100}%` }}
-                        />
-                      </div>
-                    </td>
+                    <td className="px-5 py-4 text-sm text-ever-300">{tool.pricing}</td>
+                    <td className="px-5 py-4 text-center text-sm text-ever-400">{tool.features.length}</td>
                     <td className="px-5 py-4 text-right">
                       <Link
                         href={`/tools/${tool.id}`}
@@ -239,38 +201,11 @@ export default function HomePage() {
                     <h3 className="font-semibold text-white group-hover:text-geospatial-light transition-colors truncate">{tool.name}</h3>
                     <span className="text-xs text-ever-500 uppercase tracking-wide">{tool.category}</span>
                   </div>
-                  <div className="flex items-center gap-1 bg-ever-700 px-2 py-1 rounded-md">
-                    <span className="text-amber-400 text-xs">★</span>
-                    <span className="text-xs font-bold text-ever-300">{tool.rating}</span>
-                  </div>
                 </div>
                 <p className="text-sm text-ever-400 leading-relaxed line-clamp-2 mb-3">{tool.description}</p>
                 <div className="pt-3 border-t border-ever-700 text-xs font-medium text-geospatial-light group-hover:text-white transition-colors">
                   View Details →
                 </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Top Rated */}
-      <section className="py-16 bg-ever-900">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-2xl font-bold text-white mb-2">★ Top Rated</h2>
-          <p className="text-ever-400 mb-8">Highest-rated providers from our benchmarks</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {ALL_TOOLS.filter((t) => t.rating >= 4.7).slice(0, 3).map((tool) => (
-              <Link
-                key={tool.id}
-                href={`/tools/${tool.id}`}
-                className="group bg-ever-800 border-2 border-geospatial/30 rounded-xl p-6 hover:border-geospatial hover:shadow-lg transition-all"
-              >
-                <div className="flex items-center gap-1 text-amber-400 mb-2">
-                  {Array.from({ length: 5 }).map((_, i) => <span key={i}>★</span>)}
-                </div>
-                <h3 className="text-lg font-bold text-white mb-1">{tool.name}</h3>
-                <p className="text-sm text-ever-400 line-clamp-2">{tool.description}</p>
               </Link>
             ))}
           </div>
@@ -304,8 +239,8 @@ export default function HomePage() {
       {/* CTA */}
       <section className="py-16 bg-gradient-to-r from-ever-900 via-ever-800 to-ever-900 border-t border-ever-700">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">Benchmark Before You Commit</h2>
-          <p className="text-ever-400 mb-8">See how {ALL_TOOLS.length} hosting providers stack up — real benchmarks from ServerPicks.</p>
+          <h2 className="text-3xl font-bold text-white mb-4">Compare Before You Commit</h2>
+          <p className="text-ever-400 mb-8">Browse {ALL_TOOLS.length} hosting providers side by side on ServerPicks.</p>
           <Link
             href="/all-tools"
             className="inline-flex items-center gap-2 px-8 py-3.5 bg-geospatial hover:bg-geospatial-dark text-white font-bold rounded-xl transition-colors shadow-lg"

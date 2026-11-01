@@ -26,15 +26,12 @@ const CATEGORY_DESCRIPTIONS: Record<string, string> = {
 const CATEGORY_STATS = ALL_CATEGORIES.reduce(
   (acc, cat) => {
     const tools = ALL_TOOLS.filter((t) => t.category === cat);
-    const avgRating =
-      tools.reduce((sum, t) => sum + t.rating, 0) / tools.length;
     acc[cat] = {
       count: tools.length,
-      avgRating: Math.round(avgRating * 10) / 10,
     };
     return acc;
   },
-  {} as Record<string, { count: number; avgRating: number }>
+  {} as Record<string, { count: number }>
 );
 
 export function generateStaticParams() {
@@ -116,11 +113,7 @@ export default function CategoryPage({
                 Best {category} Providers
               </h1>
               <p className="text-[#839BBE] mt-1 text-base">
-                {stats.count} tool{stats.count !== 1 ? "s" : ""} ·{" "}
-                <span className="inline-flex items-center gap-1">
-                  <Star className="w-3.5 h-3.5 text-[#F59E0B] fill-[#F59E0B]" />{" "}
-                  Avg. {stats.avgRating}/5
-                </span>
+                {stats.count} tool{stats.count !== 1 ? "s" : ""}
               </p>
             </div>
           </div>
@@ -160,12 +153,8 @@ export default function CategoryPage({
                         {tool.name}
                       </h3>
                       <div className="flex items-center gap-1 mt-1">
-                        <Star className="w-3.5 h-3.5 text-[#F59E0B] fill-[#F59E0B]" />
-                        <span className="text-xs font-bold text-[#F0F2FE]">
-                          {tool.rating}
-                        </span>
                         <span className="text-xs text-[#4A6080]">
-                          ({tool.rating}/5)
+                          {tool.category}
                         </span>
                       </div>
                     </div>

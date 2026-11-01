@@ -11,8 +11,6 @@ export function organizationSchema(name: string, url: string, description: strin
 export function softwareSchema(
   name: string,
   category: string,
-  ratingValue: number,
-  reviewCount: number,
   price: string,
   priceCurrency: string = "USD"
 ) {
@@ -21,11 +19,6 @@ export function softwareSchema(
     "@type": "SoftwareApplication",
     name,
     applicationCategory: category,
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: ratingValue.toString(),
-      ratingCount: reviewCount.toString(),
-    },
     offers: {
       "@type": "Offer",
       price,

@@ -146,8 +146,8 @@ No single provider wins every category. DigitalOcean and Linode tie for the best
 **Sources:** Cloud Infrastructure Platform Reviews (Spring 2026), Geekbench 6 Benchmark Database (June 2026), fio 3.36 disk benchmarks, custom latency probes from HetrixTools monitoring network (June 2026), provider pricing pages (accessed June 2026). Benchmark results from $12/mo tier instances in us-east regions. All ratings and statistics as of June 2026.
 
 *Comparison based on publicly available 2026 data from: Cloud provider pricing pages, independent benchmarks. Prices and features as of publication date.*`,
-    author: "Marcus Chen",
-    authorRole: "Lead Geospatial Engineer @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-06-06",
     category: "Cloud Hosting",
     readTime: 12,
@@ -266,8 +266,8 @@ No single provider is objectively best for every use case. But if I had to pick 
 **Sources:** Cloud Infrastructure Platform Reviews (Spring 2026), Synergy Research Group Cloud Market Data (Q1 2026), Geekbench 6 Benchmark Database (May 2026), Cloud Spectator Compute Benchmark Reports (Q1 2026), provider pricing pages (accessed June 2026). Benchmark results from m7i.xlarge (AWS), D4s v5 (Azure), n2-standard-4 (GCP) instances in us-east-1/us-east-2/us-east4 regions. All ratings and statistics as of June 2026.
 
 *Comparison based on publicly available 2026 data from: Cloud provider pricing pages, independent benchmarks. Prices and features as of publication date.*`,
-    author: "Aisha Patel",
-    authorRole: "Cloud Infrastructure Lead @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-06-07",
     category: "Cloud Hosting",
     readTime: 10,
@@ -305,8 +305,8 @@ No single provider is objectively best for every use case. But if I had to pick 
 <p>There is no universal \u201cbest\u201d cloud \u2014 only the best fit for your team\u2019s skills, your application\u2019s architecture, and your business\u2019s strategic goals. In 2026, we recommend startups building AI-native apps begin with GCP, mid-market SMBs choose DigitalOcean for speed and cost control, and enterprises leverage Azure for identity continuity and AWS for mission-critical scalability. Choose deliberately, measure relentlessly, and remember: the smartest providers in 2026 aren\u2019t the biggest, but the ones that align most deeply with how your team builds, secures, and ships.</p>
 
 *Comparison based on publicly available 2026 data from: Cloud provider pricing pages, independent benchmarks. Prices and features as of publication date.*`,
-    author: "Aisha Patel",
-    authorRole: "Cloud Infrastructure Lead @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-06-08",
     category: "Cloud Hosting",
     readTime: 8,
@@ -319,8 +319,8 @@ No single provider is objectively best for every use case. But if I had to pick 
     content: `## Budget Cloud Hosting in 2026: Hetzner vs OVHcloud vs Contabo vs Scaleway\n\nEuropean developers and SMBs increasingly demand high-performance, low-latency cloud infrastructure without breaking the bank. As of early 2026, budget VPS hosting has matured significantly--offering NVMe storage, IPv6 by default, automated backups, and robust API access even at entry tiers. With GDPR compliance baked in and sub-20ms intra-EU latency now standard, regional providers hold a distinct edge over global hyperscalers for EU-based workloads. Analysis of over 1,200 real user reviews, benchmarked 32 configurations across Frankfurt, Paris, Warsaw, and Amsterdam, and stress-tested uptime over 90 days to identify which provider delivers the best value--not just the lowest headline price.\n\n## Market Overview\nIn 2026, the European budget VPS market grew 18% YoY, driven by AI inference workloads, static site generators, and regulated SaaS startups. Average monthly spend per VPS rose to €14.70 (+€2.30 from 2025), reflecting increased baseline specs. Hetzner remains the volume leader (34% market share), followed by OVHcloud (27%), Contabo (22%), and Scaleway (17%). All four now offer ARM64 instances and bare-metal-as-a-service add-ons.\n\n## Pricing Comparison (Monthly, EUR, 2026)\n| Provider   | Entry VPS (2vCPU/4GB/80GB NVMe) | Mid-tier (4vCPU/8GB/160GB NVMe) | High-tier (8vCPU/16GB/320GB NVMe) |\n|------------|----------------------------------|-----------------------------------|-------------------------------------|\n| Hetzner    | €5.90                            | €11.90                            | €22.90                              |\n| OVHcloud   | €6.49                            | €13.29                            | €25.49                              |\n| Contabo    | €4.79                            | €9.49                             | €18.99                              |\n| Scaleway   | €7.20                            | €14.50                            | €27.90                              |\n\n## Performance / Infrastructure\nAll providers use modern AMD EPYC Genoa or Intel Sapphire Rapids CPUs with DDR5 RAM. Hetzner leads in raw I/O (avg. 1.8 GB/s sequential read), while Scaleway delivers the lowest network jitter (<0.3ms). Contabo's new Warsaw DC shows 12% better latency to Eastern Europe than its older Nuremberg node. OVHcloud's Paris and Strasbourg locations offer dual-stack BGP routing and optional DDoS protection at no extra cost. All support IPv6-only deployments and offer private networks (free on Hetzner & Scaleway; €2.50/mo on OVHcloud & Contabo).\n\n## User Ratings (2026, based on 1,247 verified reviews)\n| Provider   | Overall (5.0) | Ease of Use | Uptime SLA | Support Responsiveness | Value for Money |\n|------------|-------------|-------------|------------|------------------------|-----------------|\n| Hetzner    | 4.3         | 3.9         | 4.6        | 3.7                    | 4.8             |\n| OVHcloud   | 4.1         | 4.2         | 4.5        | 4.0                    | 4.3             |\n| Contabo    | 3.8         | 3.4         | 4.1        | 3.2                    | 4.6             |\n| Scaleway   | 4.4         | 4.5         | 4.7        | 4.3                    | 4.0             |\n\n## Strengths and Weaknesses\nHetzner: Strengths -- unbeatable price-to-performance, transparent billing, excellent documentation. Weaknesses -- no phone support, limited managed services, occasional stock shortages on entry nodes.\nOVHcloud: Strengths -- enterprise-grade DDoS mitigation, intuitive console, strong compliance certifications (ISO 27001, SOC 2). Weaknesses -- complex pricing tiers, slower provisioning (~90 sec vs avg. 25 sec), higher support ticket wait times.\nContabo: Strengths -- lowest entry price, generous bandwidth (unlimited on all tiers), fast setup. Weaknesses -- inconsistent support quality, outdated UI, no native CDN integration.\nScaleway: Strengths -- best-in-class UX, seamless Kubernetes integration, ARM64 parity, eco-certified data centers. Weaknesses -- highest base pricing, limited EU East coverage (no Warsaw/Bucharest), no free snapshots.\n\n## FAQ\nQ: Which provider offers the fastest deployment time? A: Scaleway averages 22 seconds; Hetzner follows closely at 25 seconds.\nQ: Do any offer free automated backups? A: Yes -- Hetzner includes weekly backups on all VPS plans; OVHcloud offers daily backups starting at mid-tier.\nQ: Is IPv6 supported everywhere? A: Yes -- all four provide native IPv6 /64 prefixes at no extra cost.\nQ: Can I migrate between regions easily? A: Hetzner and Scaleway support cross-DC image cloning; OVHcloud requires manual snapshot export/import.\nQ: Are there hidden fees? A: Contabo charges €0.01/GB for outbound traffic beyond 20TB/mo; others include unlimited bandwidth on all plans.\n\n## Conclusion\nFor pure budget-conscious developers launching MVPs or personal projects, Contabo remains the most aggressive entry point--but only if you prioritize price over polish. Hetzner strikes the best overall balance: stellar performance, rock-solid reliability, and mature tooling at near-Contabo prices. OVHcloud is ideal for teams needing compliance rigor and built-in security. Scaleway wins for modern DevOps workflows, especially Kubernetes-first stacks. Our recommendation: start with Hetzner's €5.90 plan for prototyping, then scale to Scaleway or OVHcloud as compliance or automation needs grow.
 
 *Comparison based on publicly available 2026 data from: Cloud provider pricing pages, independent benchmarks. Prices and features as of publication date.*`,
-    author: "James Mitchell",
-    authorRole: "DevOps Lead @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-06-09",
     category: "Cloud Hosting",
     readTime: 10,
@@ -375,8 +375,8 @@ No single provider is objectively best for every use case. But if I had to pick 
 <p>If raw value is your priority and you are comfortable with self-managed infrastructure, <strong>Contabo wins</strong> - especially for static sites or lightweight APIs serving Germany and Benelux. For developers who prioritize API-first workflows, compliance transparency, and future scalability, <strong>Scaleway delivers unmatched flexibility</strong> - even at the same 3.99 price point. And if reliability, customer responsiveness, and integrated tooling matter most (especially for agencies managing multiple clients), <strong>IONOS Cloud justifies its 1 premium</strong>. Ratings across review platforms confirm this hierarchy: Scaleway edges ahead on developer experience, IONOS on trust, and Contabo on affordability. Your choice depends less on specs - and more on how much friction you are willing to tolerate for savings.</p>
 
 *Comparison based on publicly available 2026 data from: Cloud provider pricing pages, independent benchmarks. Prices and features as of publication date.*`,
-    author: "Sarah Chen",
-    authorRole: "Data Scientist @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-06-10",
     category: "Cloud Hosting",
     readTime: 8,
@@ -482,8 +482,8 @@ The smartest choice for most technical teams in 2026? Start unmanaged -- then se
 
 
 *Comparison based on publicly available 2026 data from: Cloud provider pricing pages, independent benchmarks. Prices and features as of publication date.*`,
-    author: "Marcus Chen",
-    authorRole: "Lead Geospatial Engineer @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-06-11",
     category: "Cloud Hosting",
     readTime: 10,
@@ -494,8 +494,8 @@ The smartest choice for most technical teams in 2026? Start unmanaged -- then se
     title: "Dedicated Servers vs VPS vs Cloud Hosting in 2026: How to Choose Your Infrastructure Stack",
     excerpt: "Dedicated servers, VPS, and cloud hosting each solve different problems in 2026. We break down total cost of ownership, performance benchmarks, and real-world use cases to help you make the right call.",
     content: `Every infrastructure decision starts with a single question: should I rent a whole machine, share a slice, or abstract it all behind an API? In 2026, the line between dedicated servers, VPS, and cloud hosting has never been blurrier\u2014and getting it wrong can cost you 10x more than choosing the \u2018wrong\u2019 provider within the right category.\n\nI\u2019ve spent the past month stress-testing instances across bare metal (Hetzner, OVHcloud), VPS (Linode, Vultr), and cloud platforms (DigitalOcean App Platform, AWS EC2). Here\u2019s what the benchmarks reveal\u2014and why conventional wisdom about each tier is increasingly outdated.\n\n## The Three Tiers in 2026\n\n### Dedicated Servers: A Quiet Renaissance\n\nThe dedicated server market has undergone a quiet transformation. Hetzner\u2019s AX102 (AMD EPYC 9654, 128 cores, 512GB RAM) costs \u20ac249/month\u2014roughly one-third of the equivalent AWS EC2 instance cost over three years. Provisioning now happens in under 10 minutes via API, a far cry from the 48-hour turnaround of 2019.\n\nThe dedicated advantage remains clear: zero noisy-neighbor interference and fully predictable billing. For CI/CD build farms, blockchain validators, and video encoding pipelines, dedicated still wins on raw dollar-per-performance. The trade-off: hardware lifecycle management and the reality that a single motherboard failure takes everything offline.\n\n### VPS: The 2026 Sweet Spot\n\nVPS platforms\u2014Linode, Vultr, DigitalOcean Droplets\u2014have evolved far beyond their \u201ccheap shared hosting\u201d origins. Every instance now ships with NVMe storage. Network throughput has jumped to 40-100Gbps on premium tiers. And all three platforms offer managed Kubernetes, databases, and object storage as add-ons.\n\nIn our benchmarks, a Linode 4GB Dedicated CPU instance ($24/month) matched an AWS c6i.large ($69/month reserved) on Geekbench 6 multi-core\u2014at 65% lower cost. The difference? VPS providers charge for raw compute; hyperscalers charge for a platform with 200+ services you may not use.\n\n### PaaS: Paying for Time, Not Servers\n\nA DigitalOcean App Platform container with 1GB RAM costs $5/month. The equivalent AWS App Runner instance costs roughly $24/month. For that premium, you get auto-scaling across availability zones, managed SSL rotation, and CI/CD integration\u2014features requiring significant DevOps work on bare metal or VPS.\n\nThe PaaS value proposition is engineering time. At $150/hour blended engineering cost, the DevOps hours saved easily exceed the infrastructure premium. Teams using PaaS in our survey deployed 3.2x more frequently with 60% fewer production incidents.\n\n## Performance Benchmarks\n\n| Benchmark | Dedicated (Hetzner AX102) | VPS (Linode 8GB) | PaaS (DO App Pro) |\n|-----------|--------------------------|------------------|--------------------|\n| Geekbench 6 Multi-Core | 12,420 | 4,780 | 3,210 |\n| fio Seq Read (MB/s) | 6,840 | 1,680 | 540 |\n| fio Random 4K IOPS | 210,000 | 62,100 | 12,800 |\n| Network throughput | 25 Gbps | 40 Gbps | 10 Gbps |\n| Cost per month | \u20ac249 | $48 | $45 |\n\n## Decision Guide\n\n- **Maximum compute per dollar** \u2192 Dedicated (Hetzner, OVHcloud) \u2014 3-5x better perf/cost than cloud\n- **Balanced performance + low overhead** \u2192 VPS (Linode, Vultr) \u2014 the 2026 sweet spot\n- **Zero-ops deployments** \u2192 PaaS (DO App Platform, Railway) \u2014 deploy in hours, not weeks\n- **Database-heavy workloads** \u2192 VPS (Linode) \u2014 industry-leading NVMe I/O\n- **Global reach** \u2192 VPS (Vultr) \u2014 36+ data centers across 6 continents\n\n## Real-World Stack\n\nThe smartest approach in 2026 composes multiple tiers: start with a Linode Dedicated CPU instance ($48/month) for the app server, add DigitalOcean Managed PostgreSQL ($30/month), Vultr bare metal ($120/month) for background jobs, and App Platform ($5-25/month) for the auto-scaling frontend. This layered stack costs $203/month and handles 500K MAU with 99.95% uptime. The equivalent all-AWS deployment would cost $847/month\u2014a 4.1x premium.\n\n## Bottom Line\n\nStop asking \u201cwhich provider is best\u201d and ask \u201cwhich tier solves my bottleneck.\u201d If your bottleneck is compute cost, go dedicated. If it\u2019s operational complexity, go PaaS. Most of the time, VPS delivers the best balance of performance, price, and control\u2014and it keeps getting better as platforms add managed services without the hyperscaler markup.\n\n*Benchmarks conducted June 2026. Pricing from provider websites. Performance data from CloudHarmony Q2 2026 and independent testing.*`,
-    author: "Marcus Chen",
-    authorRole: "Lead Geospatial Engineer @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-06-12",
     category: "Cloud Hosting",
     readTime: 7,
@@ -649,8 +649,8 @@ There is no universal "best" cloud -- only the *most aligned* one. The winning s
 As infrastructure becomes increasingly invisible -- abstracted behind LLM-powered CLI assistants, declarative blueprints, and self-healing service meshes -- your choice of cloud should reflect not just today's requirements, but the *future shape of your engineering culture*, *compliance trajectory*, and *sustainability commitments*.
 
 Choose wisely -- and remember: the cloud isn't where you host apps. It's where your next capability is compiled.`,
-    author: "ServerPicks Team",
-    authorRole: "Cloud Infrastructure Analyst @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-06-13",
     category: "Cloud Platforms",
     readTime: 12,
@@ -762,8 +762,8 @@ If running Docker on your VPS, enforce these defaults in /etc/docker/daemon.json
 | Backups | Automated encrypted off-site | Critical |
 
 The VPS security landscape in 2026 rewards simplicity, automation, and defense-in-depth thinking. The best security setup is one you can maintain -- automate everything, test your backup restoration quarterly, and subscribe to CVE feeds for your stack. Your future self will thank you when that automated scan hits your IP at 3 AM and finds nothing open but ports 80 and 443.`,
-    author: "ServerPicks Team",
-    authorRole: "Cloud Infrastructure Analyst @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-06-14",
     category: "VPS & Dedicated Servers",
     readTime: 10,
@@ -774,13 +774,13 @@ The VPS security landscape in 2026 rewards simplicity, automation, and defense-i
     title: "From Shared Hosting to VPS: A Migration Guide for Growing Businesses",
     excerpt: "A practical, step-by-step walkthrough of migrating from shared hosting to a VPS. We cover planning, provisioning, staging, DNS cutover, and what actually changes when you make the switch.",
     content: `## From Shared Hosting to VPS: A Migration Guide for Growing Businesses  
-*By Alex Chen, Technical Support Engineer at ServerPicks.net*
+*By Long Feixiang, *
 
-Hey everyone -- Alex here. I've spent the last seven years troubleshooting hosting issues, answering support tickets, and walking small business owners through infrastructure decisions. And if there's one migration I've seen *hundreds* of times -- sometimes with panic in the voice, sometimes with quiet determination -- it's the leap from shared hosting to a VPS.
+One of the most common infrastructure decisions small business owners face is the leap from shared hosting to a VPS.
 
-I remember my own first migration vividly. It was 2019. My freelance web design business had grown enough that my client sites -- mostly WordPress blogs and small WooCommerce stores -- were hitting performance walls on Bluehost's shared plan. Pages loaded slowly during traffic spikes. Plugins like WP Super Cache and Wordfence kept triggering resource limits. One Tuesday, my staging site went down mid-demo with a client because Apache hit its memory cap. That was the nudge I needed.
+A common trigger for migration is when a growing site -- mostly WordPress blogs and small WooCommerce stores -- starts hitting performance walls on a shared plan. Pages load slowly during traffic spikes. Caching and security plugins keep triggering resource limits. Staging sites go down mid-demo because the web server hits its memory cap.
 
-So today, I'm writing this not as a theoretical guide, but as a diary-style walkthrough -- step by step, no fluff, no marketing speak -- of how *you* can migrate safely, confidently, and without losing sleep (or SEO rankings). This isn't about "upgrading for prestige." It's about control, stability, and breathing room when your business needs it most.
+This guide is written as a practical, step-by-step walkthrough -- step by step, no fluff, no marketing speak -- of how *you* can migrate safely, confidently, and without losing sleep (or SEO rankings). This isn't about "upgrading for prestige." It's about control, stability, and breathing room when your business needs it most.
 
 ### Why You're Probably Ready (Even If You're Not Sure)
 
@@ -860,17 +860,17 @@ What matters is matching your infrastructure to your actual needs -- not your as
 
 If you're reading this and thinking, "Okay, but *which* VPS?" -- head over to ServerPicks.net. Filter by your stack (LAMP vs. LEMP), location, budget, and whether you want managed support. Read the real user reviews -- especially the critical ones about network latency or support response time. And if you get stuck mid-migration? Our support team (yes, including me) answers every ticket. We've seen every error message. We'll walk you through it.
 
-You've got this. And if you need a second pair of eyes on your migration checklist -- reply to this post. I read every comment.
+You've got this. And if you need a second pair of eyes on your migration checklist -- reply to this post, the edge-case notes below cover the most common pitfalls.
 
--- Alex Chen  
-Technical Support Engineer, ServerPicks.net  
+-- Long Feixiang  
+Founder, ServerPicks  
 P.S. Next week: "How to Harden Your New VPS in 10 Minutes (Without Getting Lost in the Docs)" -- subscribe so you don't miss it.`,
-    author: "Alex Chen",
-    authorRole: "Technical Support Engineer @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-06-16",
     category: "Cloud Hosting",
     readTime: 10,
-    tags: ["Shared Hosting", "VPS Migration", "VPS Hosting", "Cloud Hosting Guide", "Web Hosting", "Migration Guide", "Alex Chen"]
+    tags: ["Shared Hosting", "VPS Migration", "VPS Hosting", "Cloud Hosting Guide", "Web Hosting", "Migration Guide", "Long Feixiang"]
   },
 {
     slug: "vps-vpn-guide-2026-deep-dive",
@@ -919,9 +919,9 @@ For quick decision-making: Budget <$5/mo → Vultr $2.50 or Contabo €3.99; $5-
 
 In 2026, the cloud hosting market has entered a stage of "precision operations" -- no single provider is optimal in every dimension. Our advice: **Clarify your core requirements first, then make decisions with quantitative data**. Use ServerPicks.net comparison tools to filter candidates matching your budget and region, then spend 30 minutes running latency tests and performance benchmarks -- this will save you hundreds of dollars and countless operational hours over the next 12-24 months.
 
-*This article was written by the ServerPicks.net review team, based on June 2026 benchmark data, user reviews, and official provider pricing pages. All recommendations are based on team testing and data analysis, with no commercial relationships with vendors.*`,
-    author: "ServerPicks Review Team",
-    authorRole: "Senior Technical Editor @ ServerPicks",
+*This article was compiled by the site founder, based on June 2026 benchmark data, user reviews, and official provider pricing pages. All recommendations are based on team testing and data analysis, with no commercial relationships with vendors.*`,
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-06-17",
     category: "Cloud Hosting",
     readTime: 12,
@@ -935,7 +935,7 @@ In 2026, the cloud hosting market has entered a stage of "precision operations" 
     excerpt: "After deploying and analyzing cloud server pricing across 7 providers -- including real-time satellite processing pipelines on Hetzner, AWS, and Vultr -- I've seen too many teams get blindsided by egress fees, IPv4 surcharges, and 'free tier' traps. In this deep-dive, I break down actual 2026 pricing from DigitalOcean, Linode, Vultr, Hetzner, and AWS Lightsail -- with benchmarks, hidden cost analysis, and battle-tested cost optimization tactics you can implement today",
     content: `# Cloud Server Pricing in 2026: How to Avoid Bill Shock and Optimize Your Cloud Costs
 
-By Marcus Chen, Lead Geospatial Engineer @ ServerPicks  
+By Long Feixiang, Founder, ServerPicks  
 Published: 2026-06-18 | Read time: 10 min  
 
 At ServerPicks, our team has spent years building and scaling cloud infrastructure across five continents. In that time, we've benchmarked countless instance types and reviewed pricing across every major provider. What I've learned? Cloud pricing isn't just about CPU and RAM --- it's a multi-dimensional puzzle where egress, IPv4 scarcity, backup retention policies, and even geographic zone selection can swing your monthly bill by 300% or more.
@@ -1034,13 +1034,13 @@ Cloud cost optimization isn't about chasing the cheapest headline number. It's a
 The good news? In 2026, transparency is improving. All five providers now publish detailed, real-time pricing calculators with egress and backup cost projections. Use them --- but always validate with your own workload tests.
 
 Stay efficient,  
-Marcus Chen  
-Lead Geospatial Engineer @ ServerPicks  
+Long Feixiang  
+Founder, ServerPicks  
 --- Building infrastructure that scales *with* your mission, not against your budget.
 
 *Methodology note: All pricing data was collected June 1--15, 2026 via provider APIs and console interfaces. Benchmarks run on clean OS installs (Ubuntu 24.04 LTS) with kernel 6.8. Disk I/O measured with fio --name=randread --ioengine=libaio --bs=4k --rw=randread --direct=1 --runtime=300 --time_based --group_reporting. Network tests conducted over private interconnects to eliminate public internet variance.*`,
-    author: "Marcus Chen",
-    authorRole: "Lead Geospatial Engineer @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-06-18",
     category: "Cloud Hosting",
     readTime: 10,
@@ -1150,9 +1150,9 @@ I use a standardized runbook for every VPS deployment:
 
 The goal is measurable: RPO of 15 minutes (data loss window) and RTO of 30 minutes (time to full recovery).
 
-## What I Use in Production (June 2026)
+## Example Production Setup (June 2026)
 
-For my own infrastructure at Spark Werks, running across Hetzner and DigitalOcean:
+A representative infrastructure setup running across Hetzner and DigitalOcean:
 
 Primary: Hetzner CPX31 (4 vCPU, 8GB, 160GB NVMe)
 - Provider snapshot via Hetzner Robot API (daily, 14-day retention)
@@ -1176,11 +1176,11 @@ Start with provider snapshots (layer 1). Add offsite replication within the firs
 Your future self -- or your client -- will thank you when the 3 AM page comes in.
 
 Stay backed up,
-Eva Quinn
-Founder @ Spark Werks Studio
+Long Feixiang
+Founder, ServerPicks
 --- Building infrastructure that survives the worst day of your business.`,
-    author: "Eva Quinn",
-    authorRole: "Disaster Recovery Specialist @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-06-19",
     category: "Cloud Hosting",
     readTime: 12,
@@ -1194,8 +1194,8 @@ Founder @ Spark Werks Studio
     content: `
 # How to Choose Cloud Servers for Cross-Border E-Commerce: 2026 Ultimate Guide
 
-**Author**: Marcus Chen  
-**Author Role**: Lead Geospatial Engineer @ ServerPicks  
+**Author**: Long Feixiang  
+**Author Role**: Founder, ServerPicks  
 **Date**: 2026-06-20  
 **Category**: cloud-hosting  
 **Read time**: 10 minutes  
@@ -1260,8 +1260,8 @@ You don't need the strongest server -- you need the one that's always online whe
 
 *All prices and config info as of June 2026. Author holds no stock in any recommended platform.*
 `,
-    author: "Marcus Chen",
-    authorRole: "Lead Geospatial Engineer @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-06-20",
     category: "Cloud Hosting",
     readTime: 10,
@@ -1364,8 +1364,8 @@ Choose your stack based on your operational capacity--not just node count.
 Remember: scaling monitoring isn't about adding more tools--it's about adding more signal and less noise. In 2026, the highest-performing VPS owners don't monitor more--they monitor smarter.
 
 Investing in observability early pays exponential dividends: faster debugging, stronger stakeholder trust, and the quiet confidence that comes from knowing your infrastructure--not hoping it holds up.`,
-    author: "Henry Nielsen",
-    authorRole: "Senior Cloud Infrastructure Engineer @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-06-21",
     category: "DevOps & Monitoring",
     readTime: 8,
@@ -1454,8 +1454,8 @@ Auto-scaling is not a silver bullet. Avoid it when:
 ## The Bottom Line
 
 In 2026, auto-scaling is accessible to every VPS owner, not just hyperscale cloud users. Start with vertical scaling for simplicity, graduate to Nomad or Docker Swarm for horizontal scaling when your application architecture supports it, and reserve Kubernetes for teams with dedicated DevOps capacity. The best scaling strategy balances cost, complexity, and reliability for your specific workload.`,
-    author: "James Chen",
-    authorRole: "Infrastructure Architect @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-06-22",
     category: "DevOps & Monitoring",
     readTime: 9,
@@ -1599,9 +1599,9 @@ Reserve Dedicated Servers for non-negotiable requirements: strict regulatory enf
 
 Infrastructure isn't about choosing the "best" technology. It's about matching constraints--budget, compliance, team skill, growth trajectory--to the right abstraction layer. Pick deliberately. Measure relentlessly. And remember: the best server is the one that lets your team ship faster, comply easier, and sleep sounder.
 
--- ServerPicks.net Editorial Team, June 2026`,
-    author: "ServerPicks Team",
-    authorRole: "Cloud Infrastructure Analyst @ ServerPicks",
+-- Long Feixiang, June 2026`,
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-06-23",
     category: "Cloud Hosting",
     readTime: 10,
@@ -1613,7 +1613,7 @@ Infrastructure isn't about choosing the "best" technology. It's about matching c
     excerpt: "When you manage virtual private servers (VPS) at scale---whether for client-facing applications, internal tooling, or hybrid cloud infrastructure---monitoring is not optional. It's the operational hea",
     content: `# VPS Monitoring Tools in 2026: Datadog vs Grafana Cloud vs Prometheus vs Nagios
 
-*By the ServerPicks.net Editorial Team --- June 2026*
+
 
 When you manage virtual private servers (VPS) at scale---whether for client-facing applications, internal tooling, or hybrid cloud infrastructure---monitoring is not optional. It's the operational heartbeat of reliability, performance, and security. In 2026, the monitoring landscape has matured significantly: observability is no longer just about uptime---it's about correlation across metrics, logs, traces, and synthetic checks; it's about intelligent alerting that reduces noise while surfacing real incidents; and it's about cost-conscious tooling that scales with your infrastructure without bloating your SaaS budget.
 
@@ -1924,10 +1924,9 @@ We'll continue tracking these platforms quarterly---testing new features like Gr
 
 For now, go deploy. Monitor wisely. And remember: the best alert is the one that never fires---because you prevented the problem before it began.
 
---- The ServerPicks.net Editorial Team  
-June 2026`,
-    author: "ServerPicks Team",
-    authorRole: "Cloud Infrastructure Analyst @ ServerPicks",
+--- Long Feixiang, June 2026`,
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-06-24",
     category: "DevOps & Monitoring",
     readTime: 16,
@@ -2042,8 +2041,8 @@ Run this test: Deploy identical 'Hello World' functions to each platform, then s
 There is no universal 'best' CDN in 2026--only the best fit for your stack, skills, and scale. Cloudflare wins on developer joy and cost efficiency for greenfield projects and VPS-light architectures. Fastly dominates when you demand surgical cache control and deterministic edge compute--especially alongside lean, purpose-built VPS services. Akamai remains irreplaceable for mission-critical, compliance-bound deployments where uptime and trust outweigh agility. And CloudFront is the pragmatic choice for AWS shops unwilling to decouple--or unable to invest in multi-cloud abstraction.
 
 At ServerPicks, we recommend starting with Cloudflare for its frictionless onboarding and generous free tier--even if you later migrate to Fastly or Akamai. Your VPS shouldn't be a bottleneck; it should be a deliberate, optimized component in a distributed system. Choose the CDN that lets you focus on what your server does best--not how to keep it online.`,
-    author: "ServerPicks Team",
-    authorRole: "Cloud Infrastructure Analyst @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-06-25",
     category: "CDN & Edge Computing",
     readTime: 14,
@@ -2184,8 +2183,8 @@ Do not spend weeks building a complex Kubernetes cost allocation system when you
 Cloud cost optimization for startups in 2026 is not about avoiding cloud -- it is about being intentional. A lean cloud strategy prioritizes simplicity, right-sizing, and waste elimination over architectural complexity. Most startups can reduce their cloud bill by 50-70% in the first 90 days by implementing the strategies above.
 
 The winning approach: start simple (single VPS + managed database), scale deliberately only when metrics prove you need to, and audit costs weekly. Cloud infrastructure should accelerate your startup -- not burn your runway.`,
-    author: "ServerPicks Team",
-    authorRole: "Cloud Infrastructure Analyst @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-06-26",
     category: "Cloud Strategy",
     readTime: 12,
@@ -2368,8 +2367,8 @@ Start small. Automate ruthlessly. Test brutally. Repeat.
 Your data is not safe until it is verified, immutable, and independently restorable - today, tomorrow, and five years from now.
 
 `,
-    author: "ServerPicks Team",
-    authorRole: "Cloud Infrastructure Analyst @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-06-27",
     category: "Cloud Security",
     readTime: 14,
@@ -2415,8 +2414,8 @@ This isn't DevOps theater. It's maintenance. It's vigilance. It's choosing the t
 
 And for us, in 2026, that tool is still Hetzner.
     `,
-    author: "Alex Rivera",
-    authorRole: "Senior Backend Engineer @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     category: "VPS & Cloud",
     tags: ["Hetzner", "VPS", "SaaS", "PostgreSQL", "Docker", "Cloud Migration", "Production Deployment", "Cost Optimization", "DevOps", "Infrastructure"],
     readTime: 11,
@@ -2425,7 +2424,7 @@ And for us, in 2026, that tool is still Hetzner.
     slug: "vps-performance-benchmarks-2026",
     title: "VPS Performance Benchmarks 2026: Linode, Vultr, Hetzner, Contabo Tested",
     excerpt: "Real-world VPS benchmarks from June 2026 comparing Linode, Vultr, Hetzner, and Contabo. I ran Geekbench 6, fio disk tests, network latency probes, and WordPress load tests to find out which provider delivers real performance for your money.",
-    authorRole: "Senior Cloud Engineer @ ServerPicks",
+    authorRole: "Founder, ServerPicks",
     date: "2026-06-29",
     content: `
 # VPS Performance Benchmarks 2026: Linode, Vultr, Hetzner, Contabo Tested  
@@ -2518,7 +2517,7 @@ Hetzner pulled ahead cleanly -- fastest throughput, lowest tail latency. But her
 I'm migrating my newsletter and SaaS dashboard to Hetzner next week. The WooCommerce store stays on Vultr -- its Tokyo latency matters for our Japanese subscribers. Linode keeps the staging env. And Contabo? I'm keeping it as my "break stuff and learn" sandbox. Because honestly? Watching 'fio' hit 42K IOPS on a 7.99/mo instance still makes me grin.
 
     `,
-    author: "Sarah Chen",
+    author: "Long Feixiang",
     category: "VPS & Cloud",
     tags: ["Linode", "Vultr", "Hetzner", "Contabo", "VPS", "Benchmarks", "Performance", "Cloud Comparison", "CPU Benchmarks", "NVMe", "WordPress", "Network Latency"],
     readTime: 11,
@@ -2670,8 +2669,8 @@ And if you're not there yet? Keep Docker. Optimize it. Monitor it. Document it. 
 
 Because infrastructure isn't about tools. It's about outcomes. And in 2026, the best outcome is staying ahead of complexity--without paying for it prematurely.
     `,
-    author: "Marcus Wei",
-    authorRole: "Cloud Infrastructure Editor",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-06-30",
     category: "VPS & Cloud",
     readTime: 12,
@@ -2743,8 +2742,8 @@ If you answered "no" to all three, start with VPS. If you answered "yes" to any,
 ### Conclusion: It's About Intent, Not Just Infrastructure
 
 In 2026, the VPS vs dedicated debate has evolved past "cheap vs expensive." It's about architectural intent. A VPS is a precision instrument for agility\u2014ideal for building, testing, and scaling services where speed-to-market and elastic cost models drive value. A dedicated server is infrastructure as sovereign territory\u2014where performance predictability, regulatory compliance, and hardware-level control aren't features, but foundational requirements. Neither is obsolete; both are more capable than ever. The fatal mistake isn't choosing one over the other\u2014it's letting pricing headlines or vendor marketing obscure your actual workload profile. Run the numbers against your real metrics: sustained I/O patterns, memory residency curves, network egress baselines, and compliance audit checklists. Then choose the architecture that lets your software breathe, scale, and secure itself without fighting the substrate beneath it. Because in 2026, the best server isn't the fastest or cheapest\u2014it's the one that disappears, letting your business logic take center stage.    `,
-    author: "Marcus Wei",
-    authorRole: "Cloud Infrastructure Editor",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-01",
     category: "VPS & Cloud",
     readTime: 11,
@@ -2893,8 +2892,8 @@ For production inference at scale, the bifurcation is clear: RunPod H200 for lat
 The smartest strategy in 2026 is hybrid: prototype on DigitalOcean GPU Droplets, train on Vast.ai or Lambda Labs, and deploy to RunPod or Hugging Face Endpoints -- using each platform where it excels while avoiding lock-in through containerized model artifacts and ONNX-format exports.
 
 **Sources**: Cloud GPU Reviews (Spring 2026), Synergy Research Group Cloud Infrastructure Data (Q1 2026), custom benchmarks using Llama.cpp v3.2 (June 2026, batch size 1, context 2048), vLLM v0.8.1 inference server benchmarks, provider pricing pages (accessed June 30, 2026). All benchmarks conducted on us-east regions where available. Prices and features as of publication date.`,
-    author: "Marcus Wei",
-    authorRole: "Cloud Infrastructure Editor",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-02",
     category: "VPS & Cloud",
     readTime: 13,
@@ -2905,7 +2904,7 @@ The smartest strategy in 2026 is hybrid: prototype on DigitalOcean GPU Droplets,
     title: "VPS Monitoring and Observability Stack in 2026 -- Prometheus, Grafana, and Beyond on a Budget",
     excerpt: "Practical guide to setting up production-grade monitoring on a single VPS: compare Prometheus/Grafana/Alertmanager vs Datadog vs Netdata vs Uptime Kuma, with real costs, alerting strategies, and Grafana dashboard recommendations for $8.50/mo.",
     content: `## VPS Monitoring and Observability Stack in 2026 -- Prometheus, Grafana, and Beyond on a Budget  
-*By Eva Quinn | 2026-07-03 | Category: VPS & Cloud*  
+*By Long Feixiang | 2026-07-03 | Category: VPS & Cloud*  
 
 Let's be real: if you're running production apps on a single $5-$10/mo VPS -- a Rails API, a Next.js frontend behind NGINX, maybe a couple Docker containers -- monitoring isn't 'nice to have'. It's the difference between spotting a memory leak before your site goes down at 3 a.m., realizing your SSL cert expired *before* users get browser warnings, or noticing that one rogue cron job has been chewing 98% CPU for three days.  
 
@@ -2968,8 +2967,8 @@ If you're scaling beyond one server? Re-evaluate. But for now -- stop guessing, 
 
 *Tags: [\"VPS Monitoring\", \"Prometheus\", \"Grafana\", \"Observability\", \"Server Monitoring\", \"Uptime Kuma\", \"Alertmanager\", \"VPS DevOps\"]*  
 *Read time: 7 minutes*`,
-    author: "Eva Quinn",
-    authorRole: "Cloud Infrastructure Editor",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-03",
     category: "VPS & Cloud",
     readTime: 8,
@@ -3355,8 +3354,8 @@ The alternative -- manual SSH, forgotten configs, and 3 a.m. fire drills -- is t
 
 **Sources**: Terraform v1.10 documentation (HashiCorp, June 2026), Ansible 11 documentation (Red Hat, May 2026), Hetzner Cloud API documentation (June 2026), personal benchmarks from 18 months of production VPS automation across Hetzner, Linode, and Vultr. Example playbooks tested on Ubuntu 24.04 LTS with Ansible 11.0 and Terraform 1.10.2.
 `,
-    author: "Eva Quinn",
-    authorRole: "Cloud Infrastructure Editor",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-04",
     category: "VPS & Cloud",
     readTime: 12,
@@ -3480,8 +3479,8 @@ In 2026, VPS selection has evolved from "how much RAM?" to "which sovereign juri
 2. European Data Protection Board. "Guidelines 04/2023 on data transfers under the GDPR." EDPB Document 04/2023, adopted 12 June 2025.  
 3. CloudPing Infrastructure Index v3.2. "Global VPS Latency Benchmarking Q1 2026." cloudping.io/reports/2026-q1-vps-latency, March 2026.  
 4. International Telecommunication Union (ITU). "Measuring Digital Development: Facts and Figures 2025." Geneva: ITU Publications, October 2025.`,
-    author: "Eva Quinn",
-    authorRole: "Cloud Infrastructure Editor",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-05",
     category: "VPS & Cloud",
     readTime: 14,
@@ -3592,8 +3591,8 @@ Sources:
 - PostgreSQL 16 Documentation: Memory Configuration Guidelines
 - Node.js Foundation Performance Best Practices (v20.12, updated March 2026)
 - Cloud Native Computing Foundation (CNCF) "State of VPS Infrastructure" report (2026)`,
-    author: "James Mitchell",
-    authorRole: "DevOps Lead @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-06",
     category: "VPS & Cloud",
     readTime: 12,
@@ -3842,8 +3841,8 @@ Sources:
 5. NIST Special Publication 800-144. "Cloud Computing Synopsis and Recommendations." Revision 3, October 2025. https://csrc.nist.gov/publications/detail/sp/800-144/rev-3/final
 
 6. PCI Security Standards Council. "PCI DSS v4.0.1 Requirements and Testing Procedures." Effective March 2026. https://docs-prv.pcisecuritystandards.org/PCI%20DSS/Standard/PCI-DSS-v4_0_1.pdf`,
-    author: "James Mitchell",
-    authorRole: "DevOps Lead @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-07",
     category: "VPS & Cloud",
     readTime: 18,
@@ -3858,7 +3857,7 @@ NVMe, SSD, and object storage aren't interchangeable -- they're distinct tools o
 
 # NVMe vs SSD vs Object Storage: Choosing the Right VPS Storage for Your Workload
 
-*Published on 2026-07-08 | By Sean Moreau, CTO @ ServerPicks*
+*Published on 2026-07-08 | By Long Feixiang, Founder, ServerPicks*
 
 Let's cut through the marketing noise. In 2026, most VPS providers advertise "SSD-backed" or "NVMe-powered" instances -- but few explain *why* you'd pick one over the other, or when object storage (like S3-compatible buckets) is actually the smarter choice *instead of* local block storage. As someone who's architected infrastructure for 147 production VPS deployments across e-commerce, real-time analytics, and edge API gateways, I'll walk you through the hard trade-offs -- with benchmarks, pricing data, and zero vendor bias.
 
@@ -3952,11 +3951,11 @@ NVMe isn't "better SSD." It's a specialized accelerator -- like a GPU for storag
 
 Choose based on your data's access pattern, not its marketing label.
 
--- Sean Moreau, CTO @ ServerPicks
+-- Long Feixiang, Founder, ServerPicks
 Testing methodology, raw fio configs, and provider-specific latency heatmaps available in our [2026 VPS Storage Benchmark Repo](https://github.com/serverpicks/vps-storage-benchmarks-2026)
     `,
-    author: "Sean Moreau",
-    authorRole: "CTO @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-08",
     category: "Cloud Hosting",
     readTime: 12,
@@ -4041,9 +4040,9 @@ The choice of a container registry can significantly impact your deployment work
 - **Consider Geo Replication:** If you have a global user base, geo replication can significantly improve the performance and availability of your containers. AWS ECR and Google Artifact Registry both support this feature.
 - **Evaluate Integration Needs:** Consider how well the registry integrates with your existing tools and workflows. A registry that integrates seamlessly with your CI/CD pipeline can save you a lot of time and effort.
 
--- Alex Chen, Infrastructure Engineer`,
-    author: "Alex Chen",
-    authorRole: "Infrastructure Engineer",
+-- Long Feixiang, Founder, ServerPicks`,
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-09",
     category: "DevOps",
     readTime: 9,
@@ -4159,8 +4158,8 @@ Our recommendation? **Start vertical\u2014scale intelligently\u2014and expand ho
 And remember: auto scaling isn\u2019t about reacting to fire\u2014it\u2019s about engineering calm. The best infrastructures don\u2019t just survive spikes. They anticipate, adapt, and return to baseline\u2014quietly, consistently, and cost-consciously.
 
 At ServerPicks.net, we\u2019ll continue stress-testing scaling behaviors across providers every quarter. Because in cloud infrastructure, *how* you scale matters just as much as *how fast* you scale.`,
-    author: "Alex Chen",
-    authorRole: "Cloud Infrastructure Analyst",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-10",
     category: "Cloud Computing",
     readTime: 10,
@@ -4288,10 +4287,10 @@ The single most important takeaway: cloud cost optimization is not a one-time pr
 
 Start with right-sizing this week. The savings are real, and they compound.
 
--- Alex Chen
-Cloud Infrastructure Engineer, ServerPicks.net`,
-    author: "Alex Chen",
-    authorRole: "Cloud Infrastructure Engineer",
+-- Long Feixiang
+Founder, ServerPicks`,
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-12",
     category: "Cloud Cost Optimization",
     readTime: 8,
@@ -4589,10 +4588,10 @@ The total migration for a typical web application takes 10-15 hours of hands-on 
 
 Start your assessment today. Your future self -- and your users -- will thank you.
 
--- Alex Chen
-Cloud Infrastructure Specialist, ServerPicks.net`,
-    author: "Alex Chen",
-    authorRole: "Cloud Infrastructure Specialist",
+-- Long Feixiang
+Founder, ServerPicks`,
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-13",
     category: "Cloud Hosting",
     readTime: 10,
@@ -4683,9 +4682,9 @@ Remember: optimisation is iterative, not a one-shot effort. Re-audit every 6 mon
 
 Network performance isn't magic -- it's methodical engineering. And in 2026, the difference between 'fast enough' and 'unbeatable' lies in deliberate, evidence-based tuning -- not guesswork.
 
--- James Whitaker, Lead Infrastructure Architect, ServerPicks.net (12 years cloud infrastructure experience, former SRE at Tier-1 CDN provider, contributor to Linux kernel networking docs)`,
-    author: "Marcus Wei",
-    authorRole: "Cloud Infrastructure Editor",
+-- Long Feixiang, Lead Infrastructure Architect, ServerPicks.net `,
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-14",
     category: "Cloud Networking",
     readTime: 7,
@@ -4880,9 +4879,9 @@ VPS edge deployments have limitations:
 
 The edge computing landscape in 2026 is diverse, and there's no one-size-fits-all solution. But for the vast majority of IoT and edge workloads that need reliable, affordable, and geographically distributed compute, a well-configured VPS is often the smartest choice -- delivering cloud-like flexibility at a fraction of the cost.
 
--- Marcus Wei, Cloud Infrastructure Editor, ServerPicks.net (7 years edge computing architecture experience, former IoT platform architect at industrial automation firm)`,
-    author: "Marcus Wei",
-    authorRole: "Cloud Infrastructure Editor",
+-- Long Feixiang, Founder, ServerPicks `,
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-15",
     category: "VPS & Dedicated Servers",
     readTime: 12,
@@ -5013,8 +5012,8 @@ The good news is that all three platforms continue to invest heavily in edge com
 ---
 
 *Benchmarks conducted in May-June 2026 using standardized test instances across all three platforms. Latency tests performed from AWS EC2 t3.medium instances in each region using curl and custom monitoring scripts. Pricing as of June 2026, subject to change.`,
-    author: "Marcus Wei",
-    authorRole: "Cloud Infrastructure Editor",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-16",
     category: "CDN & Edge Computing",
     readTime: 14,
@@ -5028,7 +5027,7 @@ The good news is that all three platforms continue to invest heavily in edge com
     content: `
 VPS Security Solutions 2026: ModSecurity vs fail2ban vs Cloudflare WAF vs OSSEC -- A Practical Hardeners Guide
 
-I've spent the last 18 months hardening over 47 production VPS instances across Ubuntu 24.04 LTS, Debian 12, and Rocky Linux 9 -- everything from tiny $5/month droplets running a single Laravel API to beefy 8GB RAM boxes hosting WordPress multisite, Node.js microservices, and private Git servers. In that time, I've cycled through every major VPS-level security layer, tweaked configs at 3 a.m., watched logs scroll in real time during actual attacks, and measured CPU/memory impact under load. Here's what actually works in 2026 -- no marketing fluff, just what holds up.
+Hardening production VPS instances spans a wide range of setups across Ubuntu 24.04 LTS, Debian 12, and Rocky Linux 9 -- from tiny droplets running a single Laravel API to larger boxes hosting WordPress multisite, Node.js microservices, and private Git servers. Covering every major VPS-level security layer means measuring CPU/memory impact under load and validating each tool against real attack patterns. Here's what actually works in 2026 -- no marketing fluff, just what holds up.
 
 1. Quick Overview: What Each Tool *Really* Does
 
@@ -5117,10 +5116,10 @@ Final note: Security isn't a product -- it's a rhythm. I rotate SSH keys monthly
 
 Hardening isn't about perfection. It's about making the attacker's ROI negative -- faster than they can script around your layers. Start with fail2ban. Then pick *one* more tool based on your threat model. Then sleep soundly.
 
--- Alex Rivera, ServerPicks.net Labs  
+-- Long Feixiang, ServerPicks  
 `,
-    author: "Alex Chen",
-    authorRole: "Security Infrastructure Editor",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-17",
     category: "Security & Monitoring",
     readTime: 9,
@@ -5210,9 +5209,9 @@ But never overshoot: a $40 dedicated server that runs at 15% utilization is wors
 
 That's exactly what I'm running for my own production stack: 3 VPS nodes ($36 total) + 1 dedicated database server ($42 at Hetzner). After 6 months, it's not just predictable--it's boring. And boring is what great infrastructure should be.
 
--- Alex Chen, ServerPicks.net Labs, July 2026`,
-    author: "Alex Chen",
-    authorRole: "Cloud Infrastructure Analyst",
+-- Long Feixiang, ServerPicks, July 2026`,
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-18",
     category: "Cloud Hosting",
     readTime: 8,
@@ -5301,11 +5300,11 @@ Stop thinking of cloud, VPS, and bare metal as a hierarchy. They are three tiers
 
 In 2026, the most expensive infrastructure decision is not choosing the wrong tier -- it is choosing one and never revisiting the decision. Review your infrastructure every 90 days. Audit your utilization. Ask yourself: "Would this run fine on a cheaper tier?"
 
-Nine times out of ten, the answer is yes. And that realization has saved my readers over $20,000 cumulatively this year alone -- just by rightsizing.
+Nine times out of ten, the answer is yes. Rightsizing alone can save hundreds of dollars per workload each year.
 
--- Alex Chen, ServerPicks.net Labs, July 2026`,
-    author: "Alex Chen",
-    authorRole: "Cloud Infrastructure Analyst",
+-- Long Feixiang, ServerPicks, July 2026`,
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-19",
     category: "Cloud Hosting",
     readTime: 8,
@@ -5428,9 +5427,9 @@ Next time you see a VPS review, ask not just *what* the scores were, but *how* t
 
 Run your own benchmarks. The five minutes of setup will save you months of production pain.
 
-\u2014 Alex Chen, ServerPicks.net Labs, July 2026`,
-    author: "Alex Chen",
-    authorRole: "Cloud Infrastructure Analyst",
+\u2014 Long Feixiang, ServerPicks, July 2026`,
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-20",
     category: "Cloud Hosting",
     readTime: 8,
@@ -5554,8 +5553,8 @@ That's the win. Not the metrics. The feeling.
 
 -- Alex R., DevOps Engineer  
 June 18, 2024`,
-    author: "Alex R.",
-    authorRole: "DevOps Engineer",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-21",
     category: "CDN and DNS",
     readTime: 10,
@@ -5680,8 +5679,8 @@ For any always-on public service, OVHcloud's built-in mitigation is hard to beat
 ## Final Thoughts
 
 There is no single "best" European VPS - only the best fit for your specific workload. Our professional recommendation: spin up a small instance on Hetzner or OVHcloud first and run it against your real traffic for a week before committing your production environment. Benchmark numbers only tell you so much; results under your actual load are what matter.`,
-    author: "Alex Chen",
-    authorRole: "Cloud Infrastructure Editor",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-22",
     category: "VPS & Dedicated Servers",
     readTime: 12,
@@ -5788,8 +5787,8 @@ Would I do it again? Absolutely — but with a checklist. I'm drafting one now: 
 
 Conclusion  
 Migrating from DigitalOcean to Hetzner wasn't magic — it was methodical, occasionally frustrating, and ultimately worth every minute. We saved $231/year, cut latency nearly in half for European users, and got significantly snappier disk and CPU performance. The hiccups weren't dealbreakers — they were reminders that infrastructure is never truly abstract. If you're running a small-to-mid SaaS app and your provider feels expensive or sluggish, benchmark first, document every config change, and don't skip the SMTP test. Your users — and your bottom line — will thank you.`,
-    author: "Alex Chen",
-    authorRole: "Cloud Infrastructure Analyst",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-23",
     category: "VPS & Cloud",
     readTime: 8,
@@ -5875,8 +5874,8 @@ A global SaaS tool achieved 99.995% uptime during a major Linode outage by autom
 
 VPS auto-scaling in 2026 is no longer a "nice-to-have" ops feature--it's a core application capability. The shift from manual thresholds to event-driven, AI-informed, multi-cloud orchestration delivers measurable gains: faster response times, lower infrastructure costs, and higher resilience. Start simple--implement metrics-based scaling with clear cooldowns and cost caps--but build toward event-driven architecture as your workload complexity grows. Remember: the goal isn't infinite scale. It's the right capacity, at the right time, in the right place--with zero manual intervention. That's not automation. It's infrastructure that thinks.
     `,
-    author: "Marcus Chen",
-    authorRole: "Cloud Infrastructure Analyst",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-24",
     category: "Cloud Servers",
     readTime: 6,
@@ -5935,8 +5934,8 @@ Uptime was near-perfect across the board---until Day 22. At 03:17 CEST, DigitalO
 
 We expected trade-offs. We didn't expect Hetzner to win on performance, reliability, *and* cost---but it did. DigitalOcean's UX polish couldn't compensate for underlying resource contention under burst load. Linode struck a strong middle ground but lacked Hetzner's hardware density and transparency. Most importantly: identical specs do not mean identical behavior. A 4 vCPU/16 GB box behaves differently depending on hypervisor tuning, storage topology, and network stack maturity. Next month, we're testing Kubernetes clusters across these same providers---with autoscaling enabled. Until then: if raw throughput, predictable latency, and engineering honesty matter more than brand recognition, start with Hetzner. Not because it's cheap---but because it's consistent.
     `,
-    author: "Eva Quinn",
-    authorRole: "Analytics Lead",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-27",
     category: "Cloud Servers",
     readTime: 7,
@@ -6146,8 +6145,8 @@ Securing a cloud server in 2026 requires a layered approach—no single tool or 
 8. **Monitoring and incident response** ensures you detect and respond to threats
 
 Start with SSH hardening and cloud firewall rules—they require minimal effort and provide the highest security ROI. Then progressively layer in the remaining controls based on your threat model, compliance requirements, and team capacity. Remember: security is a journey, not a destination. Revisit your configuration every quarter, stay current with patches, and always assume you will be targeted—because in 2026, you almost certainly are.`,
-    author: "Marcus Chen",
-    authorRole: "Cloud Infrastructure Analyst",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-29",
     category: "Cloud Servers",
     readTime: 9,
@@ -6233,8 +6232,8 @@ There's no universal 'best' VPS -- but there *is* a best fit for your workload, 
 What hasn't changed? All four providers deliver reliable, production-ready infrastructure -- none are 'budget traps'. The real differentiator today is consistency: how tightly they control their stack, how transparently they communicate capacity limits, and how much tuning headroom they leave for your apps. We recommend starting with a 7-day test on two contenders -- spin up identical staging environments, run your actual workload (not just sysbench), and measure *your* p95 latency, not someone else's benchmark.
 
 For most SMBs and indie devs reading this: try Hetzner first. You'll likely save 30-40% versus competitors -- and gain tangible performance headroom. Then, if you hit geographic or compliance constraints, pivot to Vultr or DigitalOcean. Never optimize for price alone -- but never ignore it either. In cloud infrastructure, performance *is* cost -- measured in engineering time, customer retention, and incident tickets.`,
-    author: "Marcus Chen",
-    authorRole: "Cloud Infrastructure Analyst",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-28",
     category: "Cloud Servers",
     readTime: 6,
@@ -6448,8 +6447,8 @@ WordPress on a VPS in 2026 is the smartest hosting decision you can make -- you 
 Start with a Hetzner CX22 or similar 2 vCPU / 4 GB instance. Deploy LEMP with PHP 8.3-FPM and MariaDB 11.4. Add Nginx FastCGI cache, Redis object cache, and Cloudflare CDN. Tune your PHP-FPM and MariaDB settings using the formulas above. Then run a K6 load test at 100 concurrent users -- you will be pleasantly surprised at what a well-configured $11/mo VPS can handle.
 
 For existing WordPress sites on shared hosting, the migration is straightforward. Spin up your VPS, install the stack, use a plugin like All-in-One WP Migration to export your site, import it on the VPS, update your DNS, and decommission your old host. The TTFB improvement will be visible within minutes -- and your visitors will thank you.`,
-    author: "Alex Chen",
-    authorRole: "Web Performance Engineer",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-30",
     category: "Cloud Hosting",
     readTime: 9,
@@ -6492,8 +6491,8 @@ Netdata offers real-time, high-resolution dashboards straight from the browser--
 
 ## Conclusion
 Choose the monitoring stack that fits your scale. Netdata wins on speed and simplicity for most VPS users. Grafana+Prometheus offers long-term flexibility for growing infrastructure.`,
-    author: "Alex Chen",
-    authorRole: "Cloud Infrastructure Engineer",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-07-31",
     category: "Cloud Hosting",
     readTime: 7,
@@ -6538,8 +6537,8 @@ A: Not always. Cloudflare’s free tier stays free, but some providers throttle 
 ## Conclusion  
 In 2026, running a VPS without a CDN isn’t wrong—it’s situational. For local tools, internal dashboards, or tightly controlled environments, your VPS is the hero. But for any public-facing site, app, or service aiming for speed, scale, or uptime, the CDN isn’t an add-on—it’s your first line of defense and your fastest delivery channel. Start simple: route static assets through Cloudflare’s free tier, monitor latency and egress, then upgrade only when your data says so. Your users won’t thank you for the architecture diagram—they’ll thank you for the 1.2s load time. That’s the real ROI.
 `,
-    author: "Maya Rodriguez",
-    authorRole: "Senior Edge Computing Consultant",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-08-01",
     category: "CDN and Performance",
     readTime: 8,
@@ -6669,8 +6668,8 @@ Confirm your firewall permits essential ICMPv6 but blocks everything else, and t
 ## The Bottom Line
 
 IPv6 on a modern VPS is no longer an optional science project. Every major provider supports it at no cost, the configuration is a few sysctl and netplan lines, and the security posture just requires mirroring your IPv4 firewall rules plus respecting ICMPv6. Start with dual-stack on one non-production droplet, verify the checklist above, then roll out to your fleet. The IPv4-only era is ending---and the VPS owners who embraced IPv6 early are the ones who will have zero-migration projects when the rest of the industry is forced to catch up.`,
-    author: "Henry Nielsen",
-    authorRole: "Senior Cloud Infrastructure Engineer",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-08-02",
     category: "Cloud & Servers",
     readTime: 9,
@@ -6752,8 +6751,8 @@ Treat your inference node like any production service. Watch VRAM utilization, a
 ## The Bottom Line
 
 Edge AI on VPS is a genuinely practical strategy in 2026. Pick the smallest GPU instance that fits a well-quantized model, place it near your users, front it with a solid proxy, and cache aggressively. You get sub-second responses, full data control, and a predictable bill. You do not need a data center-scale cluster to ship AI features your customers actually love.`,
-    author: "Henry Nielsen",
-    authorRole: "Senior Cloud Infrastructure Engineer",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-08-03",
     category: "Cloud & AI",
     readTime: 11,
@@ -6810,8 +6809,8 @@ This strategy is best for solo developers and small teams running several contai
 ## The bottom line
 
 Docker on a single VPS rewards people who treat capacity like a budget instead of an assumption. Set explicit limits, measure real utilization, right-size based on evidence, and revisit the plan quarterly. Most small workloads will end up on a smaller, cheaper instance with better-behaved containers, and the handful that truly need more will be obvious from the data. That is the difference between a VPS that pays for itself and one that quietly charges you for resources you never used.`,
-    author: "James Mitchell",
-    authorRole: "DevOps Lead @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-08-04",
     category: "Cloud Servers",
     readTime: 11,
@@ -6881,8 +6880,8 @@ Not for users expecting plug-and-play WordPress hosting: most budget VPS require
 ## Final Advice: Test Before You Commit
 
 Never skip the trial phase. Most providers offer money-back guarantees-Hetzner gives 14 days, Vultr 3 days, InterServer 30 days-but those windows assume you'll benchmark, stress-test, and simulate real workloads. Install your CMS or app stack. Run a 48-hour load test with wrk or k6. Trigger a simulated DDoS with hping3 (on your own isolated network) to observe mitigation behavior. Verify backup restore integrity-not just creation. And test support responsiveness *before* going live. A well-chosen budget VPS in 2026 isn't about finding the cheapest number-it's about identifying the provider whose renewal terms, hardware roadmap, and operational discipline align with your growth timeline and risk tolerance.`,
-    author: "Hannah Reyes",
-    authorRole: "Senior Cloud Infrastructure Engineer @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-08-05",
     category: "VPS & Dedicated Servers",
     readTime: 8,
@@ -6938,8 +6937,8 @@ A: Yes -- but cross-cloud networking (e.g., DO ↔ Vultr private peering) introd
 
 **Q: How did you handle database scaling?**
 A: We migrated PostgreSQL from shared-host SQLite emulation to a dedicated 2 vCPU / 8GB Hetzner DB instance ($13.99/mo), enabling connection pooling and WAL archiving -- query P99 dropped from 410ms to 89ms.`,
-    author: "ServerPicks Contributor",
-    authorRole: "Cloud Infrastructure Engineer, ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-08-06",
     category: "Case Studies",
     readTime: 7,
@@ -7038,8 +7037,8 @@ No panel is universally superior. Your VPS workload, team skills, compliance nee
 
 **Q:** How many domains can Webmin/Virtualmin handle on a 4 vCPU / 16 GB RAM VPS?  
 **A:** Virtualmin Pro benchmarks show stable operation with 210+ domains (mix of WordPress, static sites, and email-only domains) before hitting 85% RAM utilization. Beyond 250 domains, MySQL query latency increases noticeably — recommend upgrading to 8 GB RAM or enabling Percona Server’s adaptive hash index tuning.`,
-    author: "ServerPicks Contributor",
-    authorRole: "Cloud Infrastructure Engineer, ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-08-07",
     category: "Server Management",
     readTime: 9,
@@ -7084,8 +7083,8 @@ Multi-line stack traces are the number one silent killer; without a parser they 
 ## Final Recommendation
 
 For most teams the answer is clear: Fluent Bit on every node shipping to Loki with Grafana on top. It delivers centralized search, alerting, and multi-host correlation at a price that fits a modest VPS budget, and it reuses the Prometheus conventions you already know. Choose Vector if you need a richer transformation language or many exotic sinks. Centralized logging is not glamorous, but the night you avoid SSH-ing into six boxes to find a needle in four gigabytes of rotated logs, it pays for itself.`,
-    author: "James Mitchell",
-    authorRole: "DevOps Lead @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-08-08",
     category: "Server Management",
     readTime: 8,
@@ -7139,8 +7138,8 @@ Q: Can I use Let's Encrypt for internal VPS domains like vps.internal?
 A: Yes—but only if you control the authoritative DNS and can validate via DNS-01. Internal-only HTTP-01 challenges fail without public web access.
 
 Automation is operational resilience. With Let's Encrypt's 2026 ecosystem maturity, systemd integration, and robust DNS tooling, every VPS operator can reach 99.99% certificate uptime. Run sudo certbot renew --dry-run and fix any errors before your next renewal window.`,
-    author: "Marcus Chen",
-    authorRole: "Lead Geospatial Engineer @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-08-09",
     category: "Server Security",
     readTime: 8,
@@ -7258,8 +7257,8 @@ Docker Engine runs natively on ARM64 Linux. Docker Desktop is macOS/Windows only
 
 **Q: Is ARM64 support in Kubernetes fully mature?**  
 Yes. Since Kubernetes 1.25 (2022), ARM64 has been a GA-supported architecture. All major managed K8s services (EKS, AKS, GKE, Civo) offer ARM64 node pools with identical feature parity -- including autoscaling, spot pricing, and cluster autoscaler integration.`,
-    author: "Eva Quinn",
-    authorRole: "Analytics Lead",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-08-10",
     category: "VPS & Cloud",
     readTime: 9,
@@ -7320,11 +7319,11 @@ A: Every 90 days — or immediately after any major OS upgrade, provider migrati
 **Q: Is automatic updates safe for production?**
 A: Yes — when configured for security-only updates (not full dist-upgrade). Test updates in staging first if running custom services. Our 2026 audit found auto-security-updates reduced exploitable CVE exposure by 92% vs manual patching.
 
-— James Mitchell, DevOps Lead @ ServerPicks
+— Long Feixiang, Founder, ServerPicks
 Published: 2026-08-11 | Read time: 8 min | Category: VPS & Cloud
 Tags: VPS, security, SSH, firewall, fail2ban, cloud hosting, hardening, DevOps, server security`,
-    author: "James Mitchell",
-    authorRole: "DevOps Lead @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-08-11",
     category: "VPS & Cloud",
     readTime: 8,
@@ -7336,7 +7335,7 @@ Tags: VPS, security, SSH, firewall, fail2ban, cloud hosting, hardening, DevOps, 
     excerpt: "A hands-on, battle-tested guide to building scalable Ansible playbooks for managing VPS instances across DigitalOcean, Linode, Hetzner, and more — no fluff, just working automation.",
     content: `Ansible Automation for VPS Management: From Zero to Production-Ready Playbooks
 
-By James Mitchell, DevOps Lead @ ServerPicks
+By Long Feixiang, Founder, ServerPicks
 Published on 2026-08-12
 
 ---
@@ -7827,9 +7826,9 @@ Ready to go deeper? Download our free 'Ansible VPS Starter Kit' — including pr
 
 Got questions? Join our #ansible-vps channel on the ServerPicks Community Slack — we’re always happy to review your playbooks and help you level up.
 
-— James Mitchell, DevOps Lead @ ServerPicks`,
-    author: "James Mitchell",
-    authorRole: "DevOps Lead @ ServerPicks",
+— Long Feixiang, Founder, ServerPicks`,
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-08-12",
     category: "Server Management & DevOps",
     readTime: 10,
@@ -7841,7 +7840,7 @@ Got questions? Join our #ansible-vps channel on the ServerPicks Community Slack 
     excerpt: "In 2026, serverless isn't always cheaper — and VPS isn't always slower. Our benchmarks show idle VPS costs beat serverless at ~18k requests/month for API workloads, and cold starts still add 120–450ms even on premium tiers.",
     content: `## Serverless vs VPS in 2026: When Paying for Idle Compute Actually Makes Sense
 
-I've spent the last 14 months running identical workloads across six cloud providers — AWS Lambda, Cloudflare Workers, Google Cloud Run, Hetzner AX41, DigitalOcean Basic Droplet, and Linode Nanode — all under real traffic patterns from three live client sites we monitor for ServerPicks. Not lab conditions. Not synthetic load. Real user sessions, bot crawlers, cron-triggered batch jobs, and bursty webhook spikes.
+Running identical workloads across six cloud providers — AWS Lambda, Cloudflare Workers, Google Cloud Run, Hetzner AX41, DigitalOcean Basic Droplet, and Linode Nanode — under real traffic patterns means testing against real user sessions, bot crawlers, cron-triggered batch jobs, and bursty webhook spikes. Not synthetic load, but the patterns that actually reach production servers.
 
 What I found surprised me — and contradicts half the blog posts I read in early 2025. Serverless is *not* automatically cheaper or faster. And paying $5–$7/month for a VPS that sits at 3% CPU utilization for 22 hours a day? That's not waste. It's insurance. It's predictability. It's often the *right* financial and operational choice.
 
@@ -8011,7 +8010,7 @@ Ask these four questions — in order — and the answer usually emerges.
    - Full-stack devs who SSH daily → VPS
    - Dedicated SRE/infra team → Either, but they'll likely prefer VPS for observability and consistency
 
-We applied this framework to 22 real projects reviewed by our team in Q1 2026. Result: 14 chose VPS, 6 chose serverless, 2 went hybrid (serverless for webhooks, VPS for main API and DB).
+We applied this framework to 22 real projects reviewed in Q1 2026. Result: 14 chose VPS, 6 chose serverless, 2 went hybrid (serverless for webhooks, VPS for main API and DB).
 
 The hybrid approach is rising — not as a compromise, but as a deliberate partitioning. One team runs their checkout flow on Cloudflare Workers (for speed and DDoS resilience), while their inventory sync and fraud scoring run on a Hetzner VPS (for PostgreSQL proximity and background job reliability).
 
@@ -8046,8 +8045,8 @@ Serverless is brilliant — for the right job. But in 2026, it's still a special
 Our recommendation hasn't changed: start serverless if you're validating an idea or handling spikes. Migrate to VPS when you need reliability, latency control, or operational clarity — and do it before your p95 latency hits 400 ms or your monthly bill hits $200 in serverless fees plus $1,200 in incident response time.
 
 Because in infrastructure, as in life, the cheapest option is rarely the one with the lowest sticker price.`,
-    author: "Maya Rodriguez",
-    authorRole: "Cloud Infrastructure Analyst @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-08-13",
     category: "Cloud Hosting",
     readTime: 9,
@@ -8077,8 +8076,8 @@ Upload files via 'scp -r public_html/ user@vps-ip:/var/www/your-site.com/html/'.
 
 ## Post-Migration Monitoring & Maintenance
 Set up basic observability: 'apt install htop sysstat' and configure logrotate for Nginx. Enable automatic security updates with 'unattended-upgrades'. Add a weekly 'mysqldump' cron job backed up to S3-compatible storage (we use MinIO on a separate low-cost instance). In our 2026 audit, 68% of post-migration issues stemmed from overlooked cache plugins-clear all object caches and disable WP Super Cache's 'preload' until stability is confirmed. Revisit resource usage after 14 days: if load avg stays below 0.7 on 2 vCPUs, you're well-sized.`,
-    author: "Hannah Reyes",
-    authorRole: "Cloud Infrastructure Analyst @ ServerPicks",
+    author: "Long Feixiang",
+    authorRole: "Founder, ServerPicks",
     date: "2026-08-14",
     category: "Cloud Hosting",
     readTime: 7,

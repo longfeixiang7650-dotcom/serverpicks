@@ -51,7 +51,7 @@ export default function PrivacyPage() {
             <h3 className="text-lg font-semibold text-[#F0F2FE] mb-2">Cookies and Tracking Technologies</h3>
             <p>
               We use cookies, web beacons, and similar tracking technologies to enhance your
-              browsing experience, analyze site traffic, and serve targeted advertisements. You
+              browsing experience and analyze site traffic. You
               can control cookie preferences through your browser settings. For more details, see
               our Cookie Policy below.
             </p>
@@ -66,7 +66,6 @@ export default function PrivacyPage() {
               <li>To send you newsletters, marketing communications, and product updates (with your consent)</li>
               <li>To analyze usage trends and measure the effectiveness of our content</li>
               <li>To detect, prevent, and address technical issues and fraudulent activity</li>
-              <li>To display personalized advertisements through Google AdSense and other ad networks</li>
               <li>To comply with legal obligations and enforce our Terms of Service</li>
             </ul>
           </section>
@@ -85,10 +84,9 @@ export default function PrivacyPage() {
                 contractually obligated to protect it.
               </li>
               <li>
-                <strong>Advertising Partners:</strong> Google AdSense and other ad networks may
-                use cookies to serve relevant ads based on your browsing history. Google's use of
-                advertising cookies enables it and its partners to serve ads based on your visit
-                to our Site.
+                <strong>Advertising Partners:</strong> We do not currently display third-party
+                advertising on our Site. If we introduce advertising in the future, this policy
+                will be updated accordingly.
               </li>
               <li>
                 <strong>Legal Requirements:</strong> We may disclose information if required by
@@ -115,12 +113,6 @@ export default function PrivacyPage() {
               <li>
                 <strong>Analytics Cookies:</strong> Help us understand how visitors interact with
                 the Site by collecting anonymous information about pages visited and time spent.
-                We use Google Analytics for this purpose.
-              </li>
-              <li>
-                <strong>Advertising Cookies:</strong> Used by Google AdSense to deliver
-                personalized advertisements based on your interests and browsing behavior across
-                websites.
               </li>
               <li>
                 <strong>Functional Cookies:</strong> Remember your preferences and settings to
@@ -213,7 +205,7 @@ export default function PrivacyPage() {
             <div className="mt-4 p-5 bg-[#0F1F2D] border border-[#1E3A5F] rounded-xl">
               <p className="mb-2"><strong className="text-[#F0F2FE]">Email:</strong> info@serverpicks.net</p>
               <p className="mb-2"><strong className="text-[#F0F2FE]">Support:</strong> info@serverpicks.net</p>
-              <p><strong className="text-[#F0F2FE]">Address:</strong> 100 Cambridge Innovation Center, Boston, MA 02142</p>
+              <p><strong className="text-[#F0F2FE]">Location:</strong> Jinan, Shandong, China</p>
             </div>
           </section>
         </div>

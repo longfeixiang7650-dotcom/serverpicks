@@ -11,7 +11,7 @@ function slugify(category: string) {
 }
 
 export default function BestPage() {
-  const topTools = [...ALL_TOOLS].sort((a, b) => b.rating - a.rating).slice(0, 6);
+  const topTools = [...ALL_TOOLS].sort((a, b) => b.features.length - a.features.length).slice(0, 6);
 
   return (
     <div className="min-h-screen bg-[#0B1120]">
@@ -25,7 +25,7 @@ export default function BestPage() {
             Best Cloud Hosting <span className="text-[#60A5FA]">2026</span>
           </h1>
           <p className="text-[#94A3B8] mt-3 max-w-2xl mx-auto text-sm">
-            Discover the best cloud hosting platforms and services in 2026. Expert comparisons, editor scores, transparent pricing &mdash; all in one place.
+            Discover the best cloud hosting platforms and services in 2026. Side-by-side comparisons, transparent pricing &mdash; all in one place.
           </p>
         </div>
       </section>
@@ -57,7 +57,7 @@ export default function BestPage() {
       <section className="px-6 pb-24">
         <div className="max-w-[1000px] mx-auto">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-lg font-semibold text-[#F1F5F9]">Top Rated Tools</h2>
+            <h2 className="text-lg font-semibold text-[#F1F5F9]">Featured Tools</h2>
             <Link
               href={`/best/${slugify(ALL_CATEGORIES[0])}`}
               className="text-sm text-[#60A5FA] hover:underline flex items-center gap-1"
@@ -82,9 +82,7 @@ export default function BestPage() {
                       <h3 className="text-sm font-semibold text-[#E2E8F0] truncate">{tool.name}</h3>
                       <p className="text-xs text-[#64748B] mt-1 line-clamp-2">{tool.description}</p>
                       <div className="flex items-center gap-3 mt-2">
-                        <Star className="w-3 h-3 text-[#F59E0B] fill-[#F59E0B]" />
-                        <span className="text-xs text-[#94A3B8]">{tool.rating}</span>
-                        <span className="text-xs text-[#475569]">{tool.rating}/5</span>
+                        <span className="text-xs text-[#475569]">{tool.pricing}</span>
                       </div>
                     </div>
                   </div>

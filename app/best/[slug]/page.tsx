@@ -22,75 +22,9 @@ function deslugify(slug: string): string | undefined {
   return ALL_CATEGORIES.find((c) => slugify(c) === slug);
 }
 
-const BUYING_GUIDES: Record<string, string> = {
-  CRM:
-    "When choosing a CRM platform, consider your team size, sales process complexity, and integration needs. Enterprise organizations with complex workflows benefit from Salesforce's deep customization, while mid-market teams often prefer HubSpot's ease of use. Key factors to evaluate include AI-powered lead scoring, pipeline visualization, mobile access, and API ecosystem. Look for platforms that offer seamless integration with your existing email, calendar, and marketing tools.",
-  Marketing:
-    "The best marketing platform depends on your primary channel strategy. Content-driven teams benefit from HubSpot's inbound marketing suite, while email-focused marketers may prefer Mailchimp or Klaviyo. Evaluate automation capabilities, lead scoring sophistication, multi-channel campaign management, and analytics depth. Consider total cost of ownership including contact tiers — the jump between pricing tiers can be significant for growing teams.",
-  Communication:
-    "Evaluate communication platforms based on your organization's size, remote work setup, and integration ecosystem. Slack leads for channel-based messaging and app integrations, while Zoom excels at video quality and meeting features. Microsoft Teams offers the deepest Office 365 integration. Consider AI features like meeting summaries, smart replies, and thread summarization. For enterprise deployments, prioritize admin controls, compliance features, and guest access management.",
-  Management:
-    "Project management tools vary significantly in their approach. Asana excels at cross-team portfolio management and goal tracking. Monday.com offers the most visual, customizable interface with 200+ templates. Jira is the standard for software development teams. ClickUp provides the most features per dollar. Consider your team's workflow style — some prefer Kanban boards, others need Gantt charts or timeline views with dependency tracking.",
-};
+const BUYING_GUIDES: Record<string, string> = {};
 
-const FAQS: Record<string, { q: string; a: string }[]> = {
-  CRM: [
-    {
-      q: "What's the best CRM for small businesses?",
-      a: "For small businesses, HubSpot's free CRM offers the best value with contact management, deal tracking, and email integration at no cost. Freshsales is also excellent for growing teams with its intuitive interface and built-in phone system starting at $9/user/month.",
-    },
-    {
-      q: "How much does enterprise CRM cost?",
-      a: "Enterprise CRM costs vary widely. Salesforce Enterprise starts at $165/user/month with full customization, while HubSpot Enterprise runs $3,600/month for 10K contacts. Pipedrive and Zoho offer more affordable plans starting under $15/user/month.",
-    },
-    {
-      q: "What CRM features should I prioritize in 2026?",
-      a: "Prioritize AI-powered lead scoring, pipeline forecasting, workflow automation, mobile access with offline mode, and API quality for integrations. In 2026, platforms with strong AI features and agent-ready APIs have a significant advantage.",
-    },
-  ],
-  Marketing: [
-    {
-      q: "Is HubSpot worth the price for marketing automation?",
-      a: "HubSpot Marketing Hub provides exceptional value for mid-market enterprise teams that need an all-in-one solution. The free CRM integration, smart content engine, and AI content strategy tools justify the cost for teams that will use the full suite. However, the jump from Starter ($15/mo) to Pro ($890/mo) is steep.",
-    },
-    {
-      q: "What's the best email marketing platform for business?",
-      a: "For business email marketing, HubSpot is the gold standard for integrated CRM+email. Mailchimp is best for simplicity and ease of use. Marketo Engage leads enterprise-level email automation. Consider your contact list size, automation complexity, and CRM integration needs.",
-    },
-    {
-      q: "What are the must-have marketing automation features?",
-      a: "Essential features include multi-step automation workflows, lead scoring and grading, A/B testing for emails and landing pages, smart content personalization, and integrated analytics. AI-powered content recommendations and predictive lead scoring are becoming table stakes in 2026.",
-    },
-  ],
-  Communication: [
-    {
-      q: "Slack vs Teams vs Zoom — which is best?",
-      a: "Slack is best for deep app integrations and developer-friendly workflows. Microsoft Teams wins for organizations already using Office 365 with its native integration. Zoom Workplace is the strongest choice for video-first organizations that want an all-in-one platform with AI Companion included at no extra cost.",
-    },
-    {
-      q: "How do I reduce notification overload in team chat?",
-      a: "Implement channel governance policies (dedicated channels per project/team), use Do Not Disturb hours, set notification preferences per channel, and encourage async communication. Slack's notification schedules and Teams' quiet hours are effective — but culture change is more important than tool settings.",
-    },
-    {
-      q: "Is Slack AI worth the upgrade?",
-      a: "Slack AI provides genuinely useful daily recaps and thread summaries, particularly for managers and executives who can't read every message. The natural-language search across message history saves time finding past decisions. However, enterprise-grade features require Enterprise Grid, which is custom-priced.",
-    },
-  ],
-  Management: [
-    {
-      q: "Asana vs Monday.com vs ClickUp — which is best?",
-      a: "Asana is best for teams that need portfolio management and goal tracking across departments. Monday.com offers the most visual, customizable interface with minimal training. ClickUp provides the most features per dollar but has a steeper learning curve. Jira remains the standard for software development teams.",
-    },
-    {
-      q: "What project management methodology works best for SaaS teams?",
-      a: "Most SaaS teams benefit from a hybrid approach — Scrum for engineering sprints, Kanban for ongoing operations, and OKRs for strategic initiatives. Look for tools that support multiple views (board, timeline, calendar) so each team can work their way while leadership gets portfolio-level visibility.",
-    },
-    {
-      q: "How much should we budget for project management software?",
-      a: "Expect $10-15/user/month for basic plans, $20-35/user/month for business plans with automation and reporting, and custom pricing for enterprise tiers. For a 50-person team, budget approximately $750-1,500/month for a solid project management solution with automation capabilities.",
-    },
-  ],
-};
+const FAQS: Record<string, { q: string; a: string }[]> = {};
 
 function getDefaultBuyingGuide(category: string): string {
   return `When evaluating ${category.toLowerCase()} providers, consider your workload type, scale requirements, budget, and required features. Key evaluation criteria include performance benchmarks, pricing transparency, network latency, support quality, and total cost of ownership. Always take advantage of free trials to test the platform with your actual workloads before committing.`;
@@ -100,7 +34,7 @@ function getDefaultFAQs(category: string): { q: string; a: string }[] {
   return [
     {
       q: `What is the best ${category.toLowerCase()} software?`,
-      a: `The best ${category.toLowerCase()} software depends on your specific needs. Our rankings are based on editor scores, feature analysis, and expert evaluation. Compare the top-rated tools above to find the best fit for your organization.`,
+      a: `The best ${category.toLowerCase()} software depends on your specific needs. Compare the featured tools above based on pricing, features, and use cases to find the best fit for your workloads.`,
     },
     {
       q: `How much does ${category.toLowerCase()} software cost?`,
@@ -129,22 +63,20 @@ export function generateMetadata({
     return { title: "Category Not Found" };
   }
   const tools = ALL_TOOLS.filter((t) => t.category === category).sort(
-    (a, b) => b.rating - a.rating
+    (a, b) => b.features.length - a.features.length
   );
   return {
     title: `Best ${category} Tools in 2026 — Top ${Math.min(tools.length, 10)} Compared`,
-    description: `Discover the best ${category.toLowerCase()} tools in 2026. Compare top-rated platforms with editor scores, pricing breakdowns, and expert recommendations. Find the perfect ${category.toLowerCase()} tool for your workloads.`,
+    description: `Discover the best ${category.toLowerCase()} tools in 2026. Compare platforms with pricing breakdowns and feature comparisons. Find the right ${category.toLowerCase()} tool for your workloads.`,
     keywords: [
       `best ${category.toLowerCase()} software 2026`,
       `top ${category.toLowerCase()} tools`,
       `${category.toLowerCase()} comparison`,
-      `${category.toLowerCase()} reviews`,
-      `${category.toLowerCase()} ratings`,
       `best ${category.toLowerCase()} platforms`,
     ],
     openGraph: {
       title: `Best ${category} Tools in 2026 — Top Picks & Comparison`,
-      description: `Find the best ${category.toLowerCase()} tools for your workloads. Expert comparisons, editor scores, and detailed pricing for ${tools.length} leading ${category.toLowerCase()} platforms.`,
+      description: `Find the best ${category.toLowerCase()} tools for your workloads. Feature comparisons and detailed pricing for ${tools.length} leading ${category.toLowerCase()} platforms.`,
     },
   };
 }
@@ -160,7 +92,7 @@ export default function BestCategoryPage({
   }
 
   const tools = ALL_TOOLS.filter((t) => t.category === category).sort(
-    (a, b) => b.rating - a.rating
+    (a, b) => b.features.length - a.features.length
   );
   const topTool = tools[0];
   const buyingGuide = BUYING_GUIDES[category] || getDefaultBuyingGuide(category);
@@ -194,9 +126,9 @@ export default function BestCategoryPage({
                 Best {category} Tools in 2026
               </h1>
               <p className="text-base text-[#839BBE] mt-1">
-                Our expert picks for the top{" "}
+                Our curated picks for the top{" "}
                 {tools.length > 10 ? "10" : tools.length} {category.toLowerCase()}{" "}
-                platforms — compared with ratings, pricing, and key features.
+                platforms — compared with pricing and key features.
               </p>
             </div>
           </div>
@@ -211,7 +143,6 @@ export default function BestCategoryPage({
               >
                 {topTool.name}
               </Link>
-              <span className="text-[#4A6080]">— {topTool.rating}/5</span>
             </div>
           )}
         </header>
@@ -228,14 +159,8 @@ export default function BestCategoryPage({
                   <th className="text-left py-3 px-4 text-[#839BBE] font-semibold">
                     Tool
                   </th>
-                  <th className="text-left py-3 px-4 text-[#839BBE] font-semibold">
-                    Rating
-                  </th>
                   <th className="text-left py-3 px-4 text-[#839BBE] font-semibold hidden md:table-cell">
                     Pricing
-                  </th>
-                  <th className="text-left py-3 px-4 text-[#839BBE] font-semibold hidden lg:table-cell">
-                    Score
                   </th>
                   <th className="text-right py-3 px-4 text-[#839BBE] font-semibold">
                     Details
@@ -269,29 +194,18 @@ export default function BestCategoryPage({
                           </div>
                         </div>
                       </td>
-                      <td className="py-4 px-4">
-                        <div className="flex items-center gap-1">
-                          <Star className="w-4 h-4 text-[#F59E0B] fill-[#F59E0B]" />
-                          <span className="font-bold text-[#F0F2FE]">
-                            {tool.rating}
-                          </span>
-                        </div>
-                      </td>
                       <td className="py-4 px-4 text-[#839BBE] hidden md:table-cell">
                         <div className="flex items-center gap-1">
                           <DollarSign className="w-3.5 h-3.5 text-[#60A5FA]" />
                           <span>{tool.pricing}</span>
                         </div>
                       </td>
-                      <td className="py-4 px-4 text-[#4A6080] hidden lg:table-cell">
-                        {tool.rating}/5
-                      </td>
                       <td className="py-4 px-4 text-right">
                         <Link
                           href={`/tools/${tool.id}`}
                           className="inline-flex items-center gap-1 text-[#2563EB] hover:text-[#60A5FA] transition-colors text-xs font-semibold"
                         >
-                          Review <ArrowRight className="w-3 h-3" />
+                          Compare <ArrowRight className="w-3 h-3" />
                         </Link>
                       </td>
                     </tr>
@@ -329,12 +243,8 @@ export default function BestCategoryPage({
                         {tool.name}
                       </h3>
                       <div className="flex items-center gap-1 mt-1">
-                        <Star className="w-3.5 h-3.5 text-[#F59E0B] fill-[#F59E0B]" />
-                        <span className="text-xs font-bold text-[#F0F2FE]">
-                          {tool.rating}
-                        </span>
                         <span className="text-xs text-[#4A6080]">
-                          /5
+                          {tool.pricing}
                         </span>
                       </div>
                     </div>

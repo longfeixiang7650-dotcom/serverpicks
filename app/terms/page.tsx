@@ -90,21 +90,20 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-[#F0F2FE] mb-3">6. Tool Listings and Reviews</h2>
+            <h2 className="text-xl font-bold text-[#F0F2FE] mb-3">6. Provider Listings and Comparisons</h2>
             <p className="mb-3">
-              Information about tools listed on our platform is gathered from public sources,
-              vendor-provided data, and user-submitted reviews. We strive for accuracy but make
+              Information about providers listed on our platform is gathered from public sources,
+              vendor-provided data, and official documentation. We strive for accuracy but make
               no guarantees regarding the completeness or accuracy of third-party information.
             </p>
             <p className="mb-3">
-              User reviews reflect the opinions of individual users and do not represent the views
-              of ServerPicks. We reserve the right to moderate, edit, or remove reviews
-              that violate our content guidelines or Terms.
+              Listings are organized by category and use case for comparison purposes. ServerPicks
+              does not publish user ratings or reviews; our pages present pricing, features,
+              and use cases gathered from public sources.
             </p>
             <p>
-              Vendor listings may be based on paid partnerships or organic curation. Sponsored
-              listings are clearly marked as such. We maintain editorial independence in our
-              ratings and reviews.
+              We maintain editorial independence. Listings are not influenced by payment, and any
+              future sponsored placements would be clearly marked as such.
             </p>
           </section>
 
@@ -193,7 +192,7 @@ export default function TermsPage() {
             <div className="mt-4 p-5 bg-[#0F1F2D] border border-[#1E3A5F] rounded-xl">
               <p className="mb-2"><strong className="text-[#F0F2FE]">Email:</strong> info@serverpicks.net</p>
               <p className="mb-2"><strong className="text-[#F0F2FE]">Support:</strong> info@serverpicks.net</p>
-              <p><strong className="text-[#F0F2FE]">Address:</strong> ServerPicks LLC, 222 W Merchandise Mart Plaza, Suite 1212, Chicago, IL 60654</p>
+              <p><strong className="text-[#F0F2FE]">Location:</strong> Jinan, Shandong, China</p>
             </div>
           </section>
         </div>

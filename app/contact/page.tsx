@@ -30,8 +30,8 @@ export default function ContactPage() {
             Get in Touch
           </h1>
           <p className="text-lg text-ever-400 max-w-xl mx-auto">
-            Have a question about our benchmarks, want to suggest a provider, or 
-            interested in collaborating on geospatial infrastructure research?
+            Have a question about a provider, want to suggest a listing, or
+            have feedback on our comparisons? We&apos;d love to hear from you.
           </p>
         </div>
 
@@ -94,8 +94,8 @@ export default function ContactPage() {
                       <option value="">Select a subject...</option>
                       <option value="general">General Inquiry</option>
                       <option value="provider-listing">Suggest a Provider</option>
-                      <option value="benchmark">Benchmark Methodology Question</option>
-                      <option value="collaboration">Research Collaboration</option>
+                      <option value="feedback">Feedback on a Comparison</option>
+                      <option value="collaboration">Other Inquiry</option>
                       <option value="bug">Report an Issue</option>
                       <option value="other">Other</option>
                     </select>
@@ -142,7 +142,7 @@ export default function ContactPage() {
                   </a>
                 </p>
                 <p className="text-sm text-ever-400">
-                  <strong className="text-white">Benchmarks:</strong>
+                  <strong className="text-white">Suggestions:</strong>
                   <br />
                   <a href="mailto:info@serverpicks.net" className="text-geospatial-light hover:underline">
                     info@serverpicks.net
@@ -166,11 +166,7 @@ export default function ContactPage() {
               <p className="text-sm text-ever-400 leading-relaxed">
                 ServerPicks
                 <br />
-                100 Cambridge Innovation Center
-                <br />
-                Boston, MA 02142
-                <br />
-                United States
+                Jinan, Shandong, China
               </p>
             </div>
 

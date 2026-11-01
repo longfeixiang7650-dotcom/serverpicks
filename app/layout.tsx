@@ -6,11 +6,10 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "ServerPicks — Hosting & Infrastructure Comparison Guides",
   description:
-    "Server comparison and cloud hosting provider reviews. Benchmark, compare, and recommend cloud hosting providers.",
+    "Server comparison and cloud hosting provider directory. Compare pricing, features, and use cases for VPS, cloud, and dedicated server providers.",
   keywords: [
     "cloud hosting",
     "VPS hosting",
-    "geospatial systems",
     "server comparison",
     "cloud providers",
   ],
@@ -51,7 +50,7 @@ export default function RootLayout({
                   ServerPicks
                 </h4>
                 <p className="text-sm leading-relaxed text-ever-400">
-                  Cloud infrastructure benchmarking and hosting comparison guides from Boston, MA.
+                  Independent cloud hosting and VPS comparison directory.
                 </p>
               </div>
               <div>
@@ -80,7 +79,7 @@ export default function RootLayout({
               </div>
             </div>
             <div className="pt-8 border-t border-ever-800 text-center text-sm text-ever-500">
-              &copy; {new Date().getFullYear()} ServerPicks. All rights reserved. Boston, MA.
+              &copy; {new Date().getFullYear()} ServerPicks. All rights reserved.
             </div>
           </div>
         </footer>

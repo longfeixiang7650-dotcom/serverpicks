@@ -10,7 +10,7 @@ interface JsonLdProps {
 export default function JsonLd({
   siteName = 'ServerPicks',
   siteUrl = 'https://serverpicks.net',
-  description = 'Cloud infrastructure benchmarking and hosting comparison guides from Boston, MA.',
+  description = 'An independent cloud hosting and VPS comparison directory curated by Long Feixiang.',
 }: JsonLdProps) {
   useEffect(() => {
     const script = document.createElement('script');

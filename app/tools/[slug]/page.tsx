@@ -5,7 +5,6 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 import {
   ArrowLeft,
-  Star,
   CheckCircle,
   XCircle,
   ExternalLink,
@@ -13,29 +12,10 @@ import {
   TrendingUp,
   Users,
   Shield,
-  BarChart3,
-  Quote,
   Layers,
-  Sparkles,
 } from "lucide-react";
 import { TOOL_MAP, ALL_TOOLS } from "@/data/tools";
 import { softwareSchema, organizationSchema } from "@/lib/schema";
-
-function ScoreBar({ label, score, color }: { label: string; score: number; color: string }) {
-  const pct = Math.min(score, 100);
-  return (
-    <div className="flex items-center gap-3">
-      <span className="text-xs text-[#839BBE] w-20 shrink-0">{label}</span>
-      <div className="flex-1 h-2 bg-[#1E3A5F] rounded-full overflow-hidden">
-        <div
-          className="h-full rounded-full transition-all duration-500"
-          style={{ width: `${pct}%`, backgroundColor: color }}
-        />
-      </div>
-      <span className="text-xs font-bold text-[#F0F2FE] w-8 text-right">{score}%</span>
-    </div>
-  );
-}
 
 export default function ToolDetailPage() {
   const params = useParams();
@@ -52,8 +32,6 @@ export default function ToolDetailPage() {
     const software = softwareSchema(
       tool.name,
       tool.category,
-      tool.rating,
-      tool.reviewCount,
       tool.pricing || '0.00',
       'USD'
     );
@@ -66,7 +44,7 @@ export default function ToolDetailPage() {
     const org = organizationSchema(
       'ServerPicks',
       'https://serverpicks.net',
-      'Cloud infrastructure benchmarking and hosting comparison guides from Boston, MA.'
+      'An independent cloud hosting and VPS comparison directory curated by Long Feixiang.'
     );
     const s2 = document.createElement('script');
     s2.type = 'application/ld+json';
@@ -111,13 +89,6 @@ export default function ToolDetailPage() {
     })
     .filter(Boolean) as string[];
 
-  const scores = tool.scoreBreakdown || {
-    features: 90,
-    reviews: 88,
-    momentum: 85,
-    popularity: 87,
-  };
-
   return (
     <div className="relative pt-28 pb-20 px-6">
       <div className="max-w-4xl mx-auto">
@@ -138,13 +109,6 @@ export default function ToolDetailPage() {
                 <span className="px-3 py-1 bg-[#162540] text-[#2563EB] text-xs font-bold rounded-full uppercase tracking-wider border border-[#1E3A5F]">
                   {tool.category}
                 </span>
-                <div className="flex items-center text-[#F59E0B] font-bold text-sm">
-                  <Star className="w-4 h-4 fill-[#F59E0B] mr-1" />{" "}
-                  {tool.rating}/5
-                  <span className="text-[#4A6080] font-normal ml-1">
-                    (Based on aggregated data)
-                  </span>
-                </div>
               </div>
             </div>
           </div>
@@ -165,50 +129,25 @@ export default function ToolDetailPage() {
             <p className="text-sm font-bold text-[#F0F2FE]">{tool.pricing}</p>
           </div>
           <div className="bg-[#0F1F2D] border border-[#1E3A5F] rounded-xl p-4">
-            <Star className="w-5 h-5 text-[#F59E0B] mb-2" />
-            <p className="text-xs text-[#4A6080] uppercase tracking-wider mb-1">
-              Rating
-            </p>
-            <p className="text-sm font-bold text-[#F0F2FE]">
-              {tool.rating}/5
-            </p>
-          </div>
-          <div className="bg-[#0F1F2D] border border-[#1E3A5F] rounded-xl p-4">
-            <BarChart3 className="w-5 h-5 text-[#2563EB] mb-2" />
-            <p className="text-xs text-[#4A6080] uppercase tracking-wider mb-1">
-              Score
-            </p>
-            <p className="text-sm font-bold text-[#F0F2FE]">
-              {tool.rating}/5
-            </p>
-          </div>
-          <div className="bg-[#0F1F2D] border border-[#1E3A5F] rounded-xl p-4">
             <Shield className="w-5 h-5 text-[#60A5FA] mb-2" />
             <p className="text-xs text-[#4A6080] uppercase tracking-wider mb-1">
               Category
             </p>
             <p className="text-sm font-bold text-[#F0F2FE]">{tool.category}</p>
           </div>
-        </div>
-
-        <div className="bg-[#0F1F2D] border border-[#1E3A5F] rounded-xl p-6 mb-10">
-          <div className="flex items-center justify-between mb-5">
-            <h2 className="font-bold text-[#F0F2FE] flex items-center text-base">
-              <BarChart3 className="w-5 h-5 mr-2 text-[#2563EB]" /> Score
-            </h2>
-            <span className="text-xs text-[#4A6080]">Performance & feature analysis</span>
+          <div className="bg-[#0F1F2D] border border-[#1E3A5F] rounded-xl p-4">
+            <TrendingUp className="w-5 h-5 text-[#2563EB] mb-2" />
+            <p className="text-xs text-[#4A6080] uppercase tracking-wider mb-1">
+              Key Features
+            </p>
+            <p className="text-sm font-bold text-[#F0F2FE]">{tool.features.length}</p>
           </div>
-          <div className="space-y-3">
-            <ScoreBar label="Features" score={scores.features} color="#2563EB" />
-              <ScoreBar label="Reviews" score={scores.reviews} color="#60A5FA" />
-            <ScoreBar label="Momentum" score={scores.momentum} color="#F59E0B" />
-            <ScoreBar label="Popularity" score={scores.popularity} color="#8B5CF6" />
-          </div>
-          <div className="mt-4 pt-4 border-t border-[#1E3A5F] flex items-center justify-between text-xs text-[#4A6080]">
-            <span>Overall rating based on product data and feature analysis</span>
-            <span className="font-bold text-[#60A5FA]">
-              Avg: {((scores.features + scores.reviews + scores.momentum + scores.popularity) / 4).toFixed(0)}%
-            </span>
+          <div className="bg-[#0F1F2D] border border-[#1E3A5F] rounded-xl p-4">
+            <CheckCircle className="w-5 h-5 text-green-500 mb-2" />
+            <p className="text-xs text-[#4A6080] uppercase tracking-wider mb-1">
+              Key Strengths
+            </p>
+            <p className="text-sm font-bold text-[#F0F2FE]">{tool.pros.length}</p>
           </div>
         </div>
 
@@ -274,37 +213,6 @@ export default function ToolDetailPage() {
           </p>
         </div>
 
-        {tool.userQuotes && tool.userQuotes.length > 0 && (
-          <div className="mb-10">
-            <h2 className="text-2xl font-bold text-[#F0F2FE] mb-6 flex items-center gap-2">
-              <Quote className="w-6 h-6 text-[#2563EB]" />
-              What Users Say
-            </h2>
-            <div className="grid gap-4">
-              {tool.userQuotes.map((q, i) => (
-                <div
-                  key={i}
-                  className="bg-[#0F1F2D] border border-[#1E3A5F] rounded-xl p-6 relative"
-                >
-                  <Sparkles className="w-5 h-5 text-[#2563EB] opacity-30 absolute top-4 right-4" />
-                  <p className="text-sm text-[#839BBE] leading-relaxed italic mb-4">
-                    &ldquo;{q.quote}&rdquo;
-                  </p>
-                  <div className="flex items-center gap-2 text-xs text-[#4A6080]">
-                    <div className="w-8 h-8 rounded-full bg-[#162540] flex items-center justify-center text-[#2563EB] font-bold">
-                      {q.role.charAt(0)}
-                    </div>
-                    <div>
-                      <p className="font-medium text-[#F0F2FE]">{q.role}</p>
-                      <p>{q.company}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-
         {alternativeNames.length > 0 && (
           <div className="mb-10">
             <h2 className="text-2xl font-bold text-[#F0F2FE] mb-6 flex items-center gap-2">
@@ -350,10 +258,6 @@ export default function ToolDetailPage() {
                         <p className="text-xs text-[#4A6080] mt-0.5">
                           {rt.description}
                         </p>
-                        <div className="flex items-center gap-1 mt-1.5">
-                          <Star className="w-3 h-3 text-[#F59E0B] fill-[#F59E0B]" />
-                          <span className="text-xs text-[#F59E0B] font-semibold">{rt.rating}</span>
-                        </div>
                       </div>
                     </div>
                   </Link>
@@ -387,7 +291,6 @@ export default function ToolDetailPage() {
 
         <div className="mt-6 text-center">
           <p className="text-xs text-[#4A6080]">
-            {/* Removed affiliate commission text — no affiliate program active */}
             <Link href="/disclosure" className="text-[#2563EB] hover:underline">
               Learn more
             </Link>
